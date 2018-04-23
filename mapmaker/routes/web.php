@@ -17,4 +17,4 @@ Route::get('/', function () {
 
 Auth::routes();
 
-Route::get('/maps', 'MapController@index')->name('Maps');
+Route::resource('maps', 'MapController');
