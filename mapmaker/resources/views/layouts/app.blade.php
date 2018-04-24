@@ -35,8 +35,11 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav mr-auto">
+                        @guest
+                         @else
                         <li><a class="nav-link"href="{{ url('/maps') }}">{{ __('Alle mappen') }}</a></li>
                         <li><a class="nav-link"href="{{ url('/maps/create') }}">{{ __('nieuw map') }}</a></li>
+                        @endguest
                     </ul>
 
                     <!-- Right Side Of Navbar -->
