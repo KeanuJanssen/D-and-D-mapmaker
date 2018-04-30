@@ -2,19 +2,16 @@
 
 @section('content')
 <div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">Maps</div>
-                <div class="card-body">
-                    @if (session('status'))
-                        <div class="alert alert-success">
-                            {{ session('status') }}
-                        </div>
-                    @endif
-
-                    You are logged in!
-                </div>
+    <div class="row justify-content-start">
+        <!-- Map display -->
+        <div class="col-md-2" style="background:olive;">
+            <div class="image-container">
+                <img src="{{ asset('img/placeholder-map-image.jpg') }}" alt="">
+            </div>
+            <div class="map-caption">
+                <p class="map-title"></p>
+                <a class="" href=""></a>
+                <a class="" href=""></a>
             </div>
         </div>
     </div>
