@@ -13894,7 +13894,23 @@ window.Vue = __webpack_require__(36);
 Vue.component('example-component', __webpack_require__(39));
 
 var app = new Vue({
-  el: '#app'
+    el: '#app'
+});
+
+// background-manager.js
+
+$(document).ready(function () {
+
+    var sPath = window.location.pathname;
+    var sPage = sPath.substring(sPath.lastIndexOf('/') + 1);
+
+    if (sPage == 'login' || sPage == 'register') {
+
+        var backgroundElement = document.getElementById("background-wrapper");
+        backgroundElement.classList.add("background-wrapper");
+
+        console.log(sPage);
+    }
 });
 
 /***/ }),

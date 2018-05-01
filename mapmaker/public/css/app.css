@@ -10388,6 +10388,24 @@ a.text-dark:focus {
   }
 }
 
+#background-wrapper {
+  height: 94.4vh;
+}
+
+.background-wrapper {
+  background: url(/images/beter.jpg?b41ed3a8ac7fe0f819d26e787cac0370);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.vertical-middle {
+  max-width: 100%;
+}
+
 .navbar-laravel {
   background-color: #fff;
   -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
