@@ -1,0 +1,13 @@
+#background-wrapper { // Ik weet niet of dit werkt. Slechts een tijdelijke oplossing
+    height: 94.4vh;
+}
+
+.background-wrapper {
+    background: $login-background;
+    display: flex;
+    align-items: center;
+}
+
+.vertical-middle {
+    max-width: 100%;
+}

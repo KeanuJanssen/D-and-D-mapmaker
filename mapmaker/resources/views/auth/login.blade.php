@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container">
+<div class="container vertical-middle">
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
@@ -57,6 +57,9 @@
 
                                 <a class="btn btn-link" href="{{ route('password.request') }}">
                                     {{ __('Forgot Your Password?') }}
+                                </a>
+                                <a class="nav-link" href="{{ route('register') }}">
+                                    Nog geen account? {{ __('Maak er een aan') }}
                                 </a>
                             </div>
                         </div>
