@@ -116,10 +116,12 @@
                 </div>
             </div>
         </div>
-        <div class="container col-md-12">
-            <div class="new-map-button btn btn-primary">
+        <div class="container col-md-12 d-flex">
+            <div class="col-md-3"></div>
+            <div class="new-map-button btn btn-primary col-md-6">
                 <p>Maak hier je eerste map aan!</p>
             </div>
+            <div class="col-md-3"></div>
         </div>
         
         </div>
