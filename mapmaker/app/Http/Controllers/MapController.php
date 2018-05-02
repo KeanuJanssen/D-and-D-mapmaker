@@ -25,8 +25,9 @@ class MapController extends Controller
      */
     public function index()
     {
-        $maps = Maps::where('user_id', auth()->user()->id)->first();
-        return view('maps.view', compact('maps'));
+        $maps = Maps::where('user_id', auth()->user()->id)->get();
+        $results = count($maps);
+        return view('maps.view', compact('maps', 'results'));
     }
 
     /**
