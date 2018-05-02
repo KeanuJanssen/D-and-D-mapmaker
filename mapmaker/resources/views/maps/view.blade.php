@@ -117,11 +117,11 @@
             </div>
         </div>
         <div class="container col-md-12 d-flex">
-            <div class="col-md-3"></div>
-            <div class="new-map-button btn btn-primary col-md-6">
-                <p>Maak hier je eerste map aan!</p>
+            <div class="col-md-4"></div>
+            <div class="new-map-button btn btn-primary col-md-4">
+                <a href="{{ url('/maps/create') }}">Maak hier je eerste map aan!</a>
             </div>
-            <div class="col-md-3"></div>
+            <div class="col-md-4"></div>
         </div>
         
         </div>
