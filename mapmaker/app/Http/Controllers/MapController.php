@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Maps;
 
 class MapController extends Controller
 {
@@ -24,7 +25,8 @@ class MapController extends Controller
      */
     public function index()
     {
-        return view('maps.view');
+        $maps = Maps::where('user_id', auth()->user()->id)->first();
+        return view('maps.view', compact('maps'));
     }
 
     /**
