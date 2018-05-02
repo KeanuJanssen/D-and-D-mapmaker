@@ -1,0 +1,33 @@
+.image-container {
+    width:100%;
+    height: 230px;
+    img {
+        width: 100%;
+        height:100%;
+        object-fit: cover;
+    }
+}
+
+.map-wrapper {
+    margin-bottom: 25px;
+    .map-container {
+        background: #bbb;
+    }
+}
+
+
+.map-caption {
+    padding: 10px 10px;
+    .map-title {
+        font-size: 1.2rem;
+    }
+}
+
+.new-map-button {
+    width:60%;
+    p {
+        font-size: 3rem;
+        color: #fff;
+        text-align: center;
+    }
+}
