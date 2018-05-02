@@ -1,10 +1,10 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container">
-    <div class="row justify-content-start d-flex justify-content-between flex-wrap">
+<div class="container-fluid">
+    <div class="row justify-content-start d-flex justify-content-start flex-wrap">
         <!-- Map display -->
-        <div class="col-md-3 map-wrapper">
+        <div class="col-md-2 map-wrapper">
             <div class="map-container">
                 <div class="image-container">
                     <img src="{{ asset('img/placeholder-map-image.jpg') }}" alt="">
@@ -18,7 +18,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-md-3 map-wrapper">
+        <div class="col-md-2 map-wrapper">
             <div class="map-container">
                 <div class="image-container">
                     <img src="{{ asset('img/placeholder-map-image.jpg') }}" alt="">
@@ -32,7 +32,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-md-3 map-wrapper">
+        <div class="col-md-2 map-wrapper">
             <div class="map-container">
                 <div class="image-container">
                     <img src="{{ asset('img/placeholder-map-image.jpg') }}" alt="">
@@ -46,7 +46,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-md-3 map-wrapper">
+        <div class="col-md-2 map-wrapper">
             <div class="map-container">
                 <div class="image-container">
                     <img src="{{ asset('img/placeholder-map-image.jpg') }}" alt="">
@@ -60,7 +60,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-md-3 map-wrapper">
+        <div class="col-md-2 map-wrapper">
             <div class="map-container">
                 <div class="image-container">
                     <img src="{{ asset('img/placeholder-map-image.jpg') }}" alt="">
@@ -74,7 +74,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-md-3 map-wrapper">
+        <div class="col-md-2 map-wrapper">
             <div class="map-container">
                 <div class="image-container">
                     <img src="{{ asset('img/placeholder-map-image.jpg') }}" alt="">
@@ -88,7 +88,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-md-3 map-wrapper">
+        <div class="col-md-2 map-wrapper">
             <div class="map-container">
                 <div class="image-container">
                     <img src="{{ asset('img/placeholder-map-image.jpg') }}" alt="">
@@ -102,7 +102,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-md-3 map-wrapper">
+        <div class="col-md-2 map-wrapper">
             <div class="map-container">
                 <div class="image-container">
                     <img src="{{ asset('img/placeholder-map-image.jpg') }}" alt="">
@@ -116,8 +116,12 @@
                 </div>
             </div>
         </div>
-        <div class="col-md-12 new-map-button btn btn-primary">
-            <p>Maak hier je eerste map aan!</p>
+        <div class="container col-md-12">
+            <div class="new-map-button btn btn-primary">
+                <p>Maak hier je eerste map aan!</p>
+            </div>
+        </div>
+        
         </div>
     </div>
 </div>

@@ -13475,7 +13475,7 @@ p {
 
 .image-container {
   width: 100%;
-  height: 200px;
+  height: 230px;
 }
 
 .image-container img {
@@ -13499,6 +13499,10 @@ p {
 
 .map-caption .map-title {
   font-size: 1.2rem;
+}
+
+.new-map-button {
+  width: 100%;
 }
 
 .new-map-button p {
