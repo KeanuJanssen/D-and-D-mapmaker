@@ -74,10 +74,16 @@
                 </div>
             </div>
         </nav>
-
-        <main id="background-wrapper" class="py-4">
-            @yield('content')
-        </main>
+ 
+        @if (\Request::is('users'))  
+            <main id="alt-wrapper">
+                @yield('content')
+            </main>
+        @else
+            <main id="alt-wrapper" class="py-4 vh-87-1">
+                @yield('content')
+            </main>
+        @endif
     </div>
 </body>
 </html>
