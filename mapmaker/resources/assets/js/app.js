@@ -20,3 +20,23 @@ Vue.component('example-component', require('./components/ExampleComponent.vue'))
 const app = new Vue({
     el: '#app'
 });
+
+
+// background-manager.js
+
+$( document ).ready(function() {
+    
+    var sPath = window.location.pathname;
+    var sPage = sPath.substring(sPath.lastIndexOf('/') + 1);
+
+    if (sPage == 'login' || sPage == 'register') {
+
+        let backgroundElement = document.getElementById("background-wrapper");
+        backgroundElement.classList.add("background-wrapper");
+
+        console.log(sPage);
+
+    }
+
+});
+
