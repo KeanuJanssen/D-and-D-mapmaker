@@ -10427,8 +10427,8 @@ p {
   height: 94.4vh;
 }
 
-.background-wrapper {
-  background: url(/images/beter.jpg?b41ed3a8ac7fe0f819d26e787cac0370);
+#alt-wrapper {
+  background: url("/../img/beter.jpg") !important;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
