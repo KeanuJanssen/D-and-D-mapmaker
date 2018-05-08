@@ -10427,7 +10427,7 @@ p {
   height: 94.4vh;
 }
 
-#alt-wrapper {
+#background-wrapper {
   background: url("/../img/beter.jpg") !important;
   display: -webkit-box;
   display: -ms-flexbox;

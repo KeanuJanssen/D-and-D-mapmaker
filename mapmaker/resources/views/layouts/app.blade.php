@@ -79,6 +79,10 @@
             <main id="alt-wrapper">
                 @yield('content')
             </main>
+        @elseif (\Request::is('login'))
+        <main id="background-wrapper">
+                @yield('content')
+            </main>
         @else
             <main id="alt-wrapper" class="py-4 vh-87-1">
                 @yield('content')
