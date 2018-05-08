@@ -70,7 +70,7 @@ class MapController extends Controller
      */
     public function edit($id)
     {
-        //
+        return view('maps.edit');
     }
 
     /**

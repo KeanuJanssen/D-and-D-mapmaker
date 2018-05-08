@@ -75,16 +75,16 @@
             </div>
         </nav>
  
-        @if (\Request::is('users'))  
-            <main id="alt-wrapper">
+        @if ( \Request::is('maps')  )  
+            <main id="alt-wrapper" class="py-4 vh-87-1">
                 @yield('content')
             </main>
-        @elseif (\Request::is('login'))
-        <main id="background-wrapper">
+        @elseif ( \Request::is('login') || \Request::is('register') )
+            <main id="background-wrapper">
                 @yield('content')
             </main>
         @else
-            <main id="alt-wrapper" class="py-4 vh-87-1">
+            <main id="alt-wrapper">
                 @yield('content')
             </main>
         @endif
