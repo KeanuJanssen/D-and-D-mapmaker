@@ -10,8 +10,8 @@
                 </div>
                 <div class="col-12 nav navbar-nav">
                     <ul class="navbar-nav mr-auto">
-                        <li><a class="nav-link" href="{{ url('/user/edit') }}">{{ __('Wachtwoord wijzigen') }}</a></li>
-                        <li><a class="nav-link" href="{{ url('/user/edit') }}">{{ __('Gegevens wijzigen') }}</a></li>
+                        <li><a class="nav-link" href="{{ url('/users/edit') }}">{{ __('Wachtwoord wijzigen') }}</a></li>
+                        <li><a class="nav-link" href="{{ url('/users/edit') }}">{{ __('Gegevens wijzigen') }}</a></li>
                         <li>
                             <a class="nav-link" href="{{ route('logout') }}"
                                 onclick="event.preventDefault();
