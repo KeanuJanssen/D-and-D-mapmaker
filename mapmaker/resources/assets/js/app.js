@@ -6,6 +6,8 @@
  */
 
 require('./bootstrap');
+window.$ = window.jQuery = require('jquery');
+window.$ = $.extend(require('jquery-ui-bundle'));
 
 window.Vue = require('vue');
 
@@ -58,7 +60,31 @@ $( document ).ready(function() {
     }*/
 
     //drag and drop elements
-    $('.sub-sprite').draggable();
+    $('.sub-sprite').draggable({ revert: true, revertDuration: 0 });
+    $('.sprite-slot').droppable({
+        drop: function( event, ui ) {
+            let backgroundImage = ui.draggable.attr('src');
+            console.log(backgroundImage);
+          $( this ).css("background-image", 'url('+backgroundImage+')');
+        }
+    });
+
+    selectedSprite = '';
+
+    $('.sub-sprite').click(function ( data ) {
+        selectedSprite = this.getAttribute("src");
+        console.log(selectedSprite);
+    });
+
+    $('.sprite-slot').click(function ( data ) {
+        $(this).css('background-image', 'url('+ selectedSprite +')');
+    });
+
+    $('#gum-button').click(function ( data ) {
+        selectedSprite = '';
+    });
+
+    // Click and drop elements
 
 });
 

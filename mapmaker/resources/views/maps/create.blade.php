@@ -6,16 +6,16 @@
        <div class="col vh-87-1" style="background: lightgrey;">
            <div class="row py-4 no-gutters">
                 <div class="main-sprites col-12 row no-gutters border-bottom border-dark">
-                    <div class="col-2"><img class="w-100 sprite-catagory" src="{{ asset('img/placeholder-map-image.jpg') }}" alt=""></div>
-                    <div class="col-2"><img class="w-100 sprite-catagory" src="{{ asset('img/placeholder-map-image.jpg') }}" alt=""></div>
-                    <div class="col-2"><img class="w-100 sprite-catagory" src="{{ asset('img/placeholder-map-image.jpg') }}" alt=""></div>
-                    <div class="col-2"><img class="w-100 sprite-catagory" src="{{ asset('img/placeholder-map-image.jpg') }}" alt=""></div>
-                    <div class="col-2"><img class="w-100 sprite-catagory" src="{{ asset('img/placeholder-map-image.jpg') }}" alt=""></div>
-                    <div class="col-2"><img class="w-100 sprite-catagory" src="{{ asset('img/placeholder-map-image.jpg') }}" alt=""></div>
+                    <div class="col-2"><img id="sprite-catagory-1" class="w-100 sprite-catagory" src="{{ asset('img/placeholder-map-image.jpg') }}" alt=""></div>
+                    <div class="col-2"><img id="sprite-catagory-2" class="w-100 sprite-catagory" src="{{ asset('img/placeholder-map-image.jpg') }}" alt=""></div>
+                    <div class="col-2"><img id="sprite-catagory-3" class="w-100 sprite-catagory" src="{{ asset('img/placeholder-map-image.jpg') }}" alt=""></div>
+                    <div class="col-2"><img id="sprite-catagory-4" class="w-100 sprite-catagory" src="{{ asset('img/placeholder-map-image.jpg') }}" alt=""></div>
+                    <div class="col-2"><img id="sprite-catagory-5" class="w-100 sprite-catagory" src="{{ asset('img/placeholder-map-image.jpg') }}" alt=""></div>
+                    <div class="col-2"><img id="sprite-catagory-6" class="w-100 sprite-catagory" src="{{ asset('img/placeholder-map-image.jpg') }}" alt=""></div>
                 </div>
                 <div class="sub-sprites col-12 row no-gutters">
-                    <div class="col-2"><img class="w-100 sub-sprite" src="{{ asset('img/placeholder-map-image.jpg') }}" alt=""></div>
-                    <div class="col-2"><img class="w-100 sub-sprite" src="{{ asset('img/placeholder-map-image.jpg') }}" alt=""></div>
+                    <div class="col-2"><img id="sub-sprite-1-1" class="w-100 sub-sprite" src="{{ asset('img/placeholder-map-image.jpg') }}" alt=""></div>
+                    <div class="col-2"><img id="sub-sprite-1-2" class="w-100 sub-sprite" src="{{ asset('img/beter.jpg') }}" alt=""></div>
                 </div>
            </div>
        </div>
@@ -190,8 +190,9 @@
                     <div class="badge badge-light bottom-menu-buttons w-100">Papier grote: A4</div>
                     <div class="badge badge-light bottom-menu-buttons w-100">Sprite grote: 2,5</div>
                 </div>
-                <div class="col-3 d-flex justify-content-center align-items-center">
-                    <button class="btn btn-danger bottom-menu-buttons">Verwijderen</button>
+                <div class="col-3 d-flex justify-content-center align-items-center flex-column">
+                    <button id="gum-button" class="btn btn-danger bottom-menu-buttons w-100">Gum</button>
+                    <button id="delete-button" class="btn btn-danger bottom-menu-buttons w-100">Verwijderen</button>
                 </div>
                 <div class="col-3 d-flex justify-content-center align-items-center">
                     <button class="btn btn-success bottom-menu-buttons">Opslaan</button>
