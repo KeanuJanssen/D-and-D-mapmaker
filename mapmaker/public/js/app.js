@@ -13897,10 +13897,9 @@ var app = new Vue({
     el: '#app'
 });
 
-// background-manager.js
-
 $(document).ready(function () {
 
+    // background-manager.js
     var sPath = window.location.pathname;
     var sPage = sPath.substring(sPath.lastIndexOf('/') + 1);
 
@@ -13911,6 +13910,28 @@ $(document).ready(function () {
 
         console.log(sPage);
     }
+
+    //drag and drop elements ***OLD***
+    /*console.log('The drag and drop script is active');
+    window.allowDrop = function (de) {
+        de.preventDefault();
+        console.log('allowDrop() Triggerd');
+    }
+    
+    window.drag = function (de) {
+        de.dataTransfer.setData("text", de.target.id);
+        console.log('drag() Triggerd');
+    }
+    
+    window.drop = function (de) {
+        de.preventDefault();
+        var data = de.dataTransfer.getData("text");
+        de.target.appendChild(document.getElementById(data));
+        console.log('drop() Triggerd');
+    }*/
+
+    //drag and drop elements
+    $('.sub-sprite').draggable();
 });
 
 /***/ }),
