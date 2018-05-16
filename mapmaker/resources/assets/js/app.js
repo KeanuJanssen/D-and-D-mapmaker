@@ -6,6 +6,8 @@
  */
 
 require('./bootstrap');
+window.$ = window.jQuery = require('jquery');
+window.$ = $.extend(require('jquery-ui-bundle'));
 
 window.Vue = require('vue');
 
@@ -22,10 +24,10 @@ const app = new Vue({
 });
 
 
-// background-manager.js
 
 $( document ).ready(function() {
     
+    // background-manager.js
     var sPath = window.location.pathname;
     var sPage = sPath.substring(sPath.lastIndexOf('/') + 1);
 
@@ -37,6 +39,51 @@ $( document ).ready(function() {
         console.log(sPage);
 
     }
+
+    //drag and drop elements ***OLD***
+    /*console.log('The drag and drop script is active');
+    window.allowDrop = function (de) {
+        de.preventDefault();
+        console.log('allowDrop() Triggerd');
+    }
+    
+    window.drag = function (de) {
+        de.dataTransfer.setData("text", de.target.id);
+        console.log('drag() Triggerd');
+    }
+    
+    window.drop = function (de) {
+        de.preventDefault();
+        var data = de.dataTransfer.getData("text");
+        de.target.appendChild(document.getElementById(data));
+        console.log('drop() Triggerd');
+    }*/
+
+    //drag and drop elements
+    $('.sub-sprite').draggable({ revert: true, revertDuration: 0 });
+    $('.sprite-slot').droppable({
+        drop: function( event, ui ) {
+            let backgroundImage = ui.draggable.attr('src');
+            console.log(backgroundImage);
+          $( this ).css("background-image", 'url('+backgroundImage+')');
+        }
+    });
+
+    // Click and drop elements
+    selectedSprite = '';
+
+    $('.sub-sprite').click(function ( data ) {
+        selectedSprite = this.getAttribute("src");
+        console.log(selectedSprite);
+    });
+
+    $('.sprite-slot').mousedown(function ( data ) {
+        $(this).css('background-image', 'url('+ selectedSprite +')');
+    });
+
+    $('#gum-button').click(function ( data ) {
+        selectedSprite = '';
+    });
 
 });
 
