@@ -21,7 +21,6 @@
            </div>
        </div>
        <div class="col-10">
-           {{ 'test' }}
            <div class="row map-grid" style="width: 54vw; height: 37.95vw;">
                 <div class="sprite-slot-bar col-12 row no-gutters">
                     <div id="sprite-slot-1" class="col sprite-slot"></div>
@@ -33,10 +32,10 @@
                     <div id="sprite-slot-7" class="col sprite-slot"></div>
                     <div id="sprite-slot-8" class="col sprite-slot"></div>
                     <div id="sprite-slot-9" class="col sprite-slot"></div>
-                    <div id="sprite-slot-10" class="col sprite-slot"></div>
-                    <div id="sprite-slot-11" class="col sprite-slot"></div>
                 </div>
                 <div class="sprite-slot-bar col-12 row no-gutters">
+                    <div id="sprite-slot-10" class="col sprite-slot"></div>
+                    <div id="sprite-slot-11" class="col sprite-slot"></div>
                     <div id="sprite-slot-12" class="col sprite-slot"></div>
                     <div id="sprite-slot-13" class="col sprite-slot"></div>
                     <div id="sprite-slot-14" class="col sprite-slot"></div>
@@ -44,28 +43,30 @@
                     <div id="sprite-slot-16" class="col sprite-slot"></div>
                     <div id="sprite-slot-17" class="col sprite-slot"></div>
                     <div id="sprite-slot-18" class="col sprite-slot"></div>
+                </div>
+                <div class="sprite-slot-bar col-12 row no-gutters">
                     <div id="sprite-slot-19" class="col sprite-slot"></div>
                     <div id="sprite-slot-20" class="col sprite-slot"></div>
                     <div id="sprite-slot-21" class="col sprite-slot"></div>
                     <div id="sprite-slot-22" class="col sprite-slot"></div>
-                </div>
-                <div class="sprite-slot-bar col-12 row no-gutters">
                     <div id="sprite-slot-23" class="col sprite-slot"></div>
                     <div id="sprite-slot-24" class="col sprite-slot"></div>
                     <div id="sprite-slot-25" class="col sprite-slot"></div>
                     <div id="sprite-slot-26" class="col sprite-slot"></div>
                     <div id="sprite-slot-27" class="col sprite-slot"></div>
+                </div>
+                <div class="sprite-slot-bar col-12 row no-gutters">
                     <div id="sprite-slot-28" class="col sprite-slot"></div>
                     <div id="sprite-slot-29" class="col sprite-slot"></div>
                     <div id="sprite-slot-30" class="col sprite-slot"></div>
                     <div id="sprite-slot-31" class="col sprite-slot"></div>
                     <div id="sprite-slot-32" class="col sprite-slot"></div>
                     <div id="sprite-slot-33" class="col sprite-slot"></div>
-                </div>
-                <div class="sprite-slot-bar col-12 row no-gutters">
                     <div id="sprite-slot-34" class="col sprite-slot"></div>
                     <div id="sprite-slot-35" class="col sprite-slot"></div>
                     <div id="sprite-slot-36" class="col sprite-slot"></div>
+                </div>
+                <div class="sprite-slot-bar col-12 row no-gutters">
                     <div id="sprite-slot-37" class="col sprite-slot"></div>
                     <div id="sprite-slot-38" class="col sprite-slot"></div>
                     <div id="sprite-slot-39" class="col sprite-slot"></div>
@@ -74,9 +75,9 @@
                     <div id="sprite-slot-42" class="col sprite-slot"></div>
                     <div id="sprite-slot-43" class="col sprite-slot"></div>
                     <div id="sprite-slot-44" class="col sprite-slot"></div>
+                    <div id="sprite-slot-45" class="col sprite-slot"></div>
                 </div>
                 <div class="sprite-slot-bar col-12 row no-gutters">
-                    <div id="sprite-slot-45" class="col sprite-slot"></div>
                     <div id="sprite-slot-46" class="col sprite-slot"></div>
                     <div id="sprite-slot-47" class="col sprite-slot"></div>
                     <div id="sprite-slot-48" class="col sprite-slot"></div>
@@ -86,9 +87,9 @@
                     <div id="sprite-slot-52" class="col sprite-slot"></div>
                     <div id="sprite-slot-53" class="col sprite-slot"></div>
                     <div id="sprite-slot-54" class="col sprite-slot"></div>
-                    <div id="sprite-slot-55" class="col sprite-slot"></div>
                 </div>
                 <div class="sprite-slot-bar col-12 row no-gutters">
+                    <div id="sprite-slot-55" class="col sprite-slot"></div>
                     <div id="sprite-slot-56" class="col sprite-slot"></div>
                     <div id="sprite-slot-57" class="col sprite-slot"></div>
                     <div id="sprite-slot-58" class="col sprite-slot"></div>
@@ -97,36 +98,8 @@
                     <div id="sprite-slot-61" class="col sprite-slot"></div>
                     <div id="sprite-slot-62" class="col sprite-slot"></div>
                     <div id="sprite-slot-63" class="col sprite-slot"></div>
-                    <div id="sprite-slot-64" class="col sprite-slot"></div>
-                    <div id="sprite-slot-65" class="col sprite-slot"></div>
-                    <div id="sprite-slot-66" class="col sprite-slot"></div>
                 </div>
-                <div class="sprite-slot-bar col-12 row no-gutters">
-                    <div id="sprite-slot-67" class="col sprite-slot"></div>
-                    <div id="sprite-slot-68" class="col sprite-slot"></div>
-                    <div id="sprite-slot-69" class="col sprite-slot"></div>
-                    <div id="sprite-slot-70" class="col sprite-slot"></div>
-                    <div id="sprite-slot-71" class="col sprite-slot"></div>
-                    <div id="sprite-slot-72" class="col sprite-slot"></div>
-                    <div id="sprite-slot-73" class="col sprite-slot"></div>
-                    <div id="sprite-slot-74" class="col sprite-slot"></div>
-                    <div id="sprite-slot-75" class="col sprite-slot"></div>
-                    <div id="sprite-slot-76" class="col sprite-slot"></div>
-                    <div id="sprite-slot-77" class="col sprite-slot"></div>
-                </div>
-                <div class="sprite-slot-bar col-12 row no-gutters">
-                    <div id="sprite-slot-78" class="col sprite-slot"></div>
-                    <div id="sprite-slot-79" class="col sprite-slot"></div>
-                    <div id="sprite-slot-80" class="col sprite-slot"></div>
-                    <div id="sprite-slot-81" class="col sprite-slot"></div>
-                    <div id="sprite-slot-82" class="col sprite-slot"></div>
-                    <div id="sprite-slot-83" class="col sprite-slot"></div>
-                    <div id="sprite-slot-84" class="col sprite-slot"></div>
-                    <div id="sprite-slot-85" class="col sprite-slot"></div>
-                    <div id="sprite-slot-86" class="col sprite-slot"></div>
-                    <div id="sprite-slot-87" class="col sprite-slot"></div>
-                    <div id="sprite-slot-88" class="col sprite-slot"></div>
-                </div>
+                
            </div>
            <div class="row" style="height: 12vh!important; background: grey;">
                 <div class="col-3 d-flex justify-content-center align-items-center">

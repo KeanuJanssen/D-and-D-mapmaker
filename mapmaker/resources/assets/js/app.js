@@ -69,6 +69,7 @@ $( document ).ready(function() {
         }
     });
 
+    // Click and drop elements
     selectedSprite = '';
 
     $('.sub-sprite').click(function ( data ) {
@@ -76,15 +77,13 @@ $( document ).ready(function() {
         console.log(selectedSprite);
     });
 
-    $('.sprite-slot').click(function ( data ) {
+    $('.sprite-slot').mousedown(function ( data ) {
         $(this).css('background-image', 'url('+ selectedSprite +')');
     });
 
     $('#gum-button').click(function ( data ) {
         selectedSprite = '';
     });
-
-    // Click and drop elements
 
 });
 

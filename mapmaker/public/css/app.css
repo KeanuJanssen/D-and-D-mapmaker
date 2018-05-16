@@ -10459,10 +10459,10 @@ p {
 
 #gum-button,
 #delete-button {
-  font-size: 1rem;
+  font-size: 1.5rem;
 }
 
-.sprite-slot {
+.sprite-slot-bar .sprite-slot {
   border: 1px solid black;
   background-size: 100% 100%;
 }
