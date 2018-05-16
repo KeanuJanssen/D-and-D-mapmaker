@@ -21,7 +21,6 @@
            </div>
        </div>
        <div class="col-10">
-           {{ 'test' }}
            <div class="row map-grid" style="width: 54vw; height: 37.95vw;">
                 <div class="sprite-slot-bar col-12 row no-gutters">
                     <div id="sprite-slot-1" class="col sprite-slot"></div>
