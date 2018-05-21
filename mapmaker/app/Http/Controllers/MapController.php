@@ -37,6 +37,7 @@ class MapController extends Controller
      */
     public function create()
     {
+        
         return view('maps.create');
     }
 
@@ -71,6 +72,7 @@ class MapController extends Controller
     public function edit($id)
     {
         return view('maps.edit');
+        $maps = Maps::where('user_id', auth()->user()->id)->get();
     }
 
     /**

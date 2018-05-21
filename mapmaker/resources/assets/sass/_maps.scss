@@ -32,17 +32,13 @@
     }
 }
 
-.bottom-menu-buttons {
-    font-size: 2rem;
-}
-
-#gum-button, #delete-button {
-    font-size: 1.5rem;
-}
-
 .sprite-slot-bar {
     .sprite-slot {
-        border: 1px solid black;
-        background-size: 100% 100%;
+        border: 1px solid black!important;
+        background-size: cover;
     }
+}
+
+.sprite-catagory .sub-sprite {
+    border: 1px solid black!important;
 }
