@@ -23,6 +23,9 @@
 </head>
 <body>
     <div id="app">
+    @if ( \Request::is('/')  )
+    
+        @else
         <nav class="navbar navbar-expand-md navbar-light navbar-laravel">
             <div class="container-fluid">
                 <a class="navbar-brand" href="{{ url('/maps') }}">
@@ -74,6 +77,7 @@
                 </div>
             </div>
         </nav>
+        @endif
  
         @if ( \Request::is('maps')  )  
             <main id="alt-wrapper" class="py-4 vh-87-1">

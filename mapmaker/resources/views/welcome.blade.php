@@ -1,4 +1,4 @@
-@extends('layouts.noheader')
+@extends('layouts.app')
 
 @section('content')
 <div class="container vertical-middle">
