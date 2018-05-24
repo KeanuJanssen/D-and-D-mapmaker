@@ -3,11 +3,52 @@
 }
 
 #background-wrapper {
-    background: $login-background!important;
+    background: $login-background;
     display: flex;
     align-items: center;
+    background-size: cover;
 }
 
 .vertical-middle {
     max-width: 100%;
 }
+
+.home-page {
+    height: 100vh;
+    .backgrounded {
+        background: $login-background;
+        background-size: cover;
+    }
+    .intro-text {
+        background: #fff;
+        border-radius: 5px;
+        border: #bbb solid 1px;
+        width: 60%;
+        padding: 30px 50px;
+        h2, p {
+            margin: 20px 0;
+        }
+    }
+    .login-options {
+        background: #bbb;
+    }
+    .login-button-container {
+        margin-top:25vh;
+        .login-button {
+            margin: 5px 0;
+        }
+    }
+}
+
+.gegevens-title {
+    margin: 20px 10px;
+}
+
+.gegevens-input {
+    width: 60%;
+}
+
+.navbar-listitem {
+    padding: 10px 0 10px 15px;
+}
+
