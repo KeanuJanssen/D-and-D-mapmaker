@@ -10509,6 +10509,15 @@ p {
   border: 1px solid black !important;
 }
 
+.map-grid {
+  padding: 0;
+}
+
+.map-grid .sprite-slot {
+  width: 15%;
+  height: 15%;
+}
+
 .navbar-laravel {
   background-color: #fff;
   -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);

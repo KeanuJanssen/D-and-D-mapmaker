@@ -22,10 +22,8 @@
        </div>
        <div class="col-10">
            <div class="row" style="height: 75vh!important; background: green;">
-                <div class="col-12 map-grid" style="background: yellow;">
-            
-                    dit is de beste map ooit
-
+                <div class="col-12 map-grid" style="background: #4286f4;">
+                    <div class="sprite-slot border border-dark"></div>
                 </div>
            </div>
             <div class="row" style="height: 12vh!important; background: grey;">
