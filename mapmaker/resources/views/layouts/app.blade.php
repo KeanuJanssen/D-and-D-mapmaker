@@ -79,11 +79,11 @@
         </nav>
         @endif
  
-        @if ( \Request::is('maps')  )  
+        @if ( \Request::is('maps', 'maps/create')  )  
             <main id="alt-wrapper" class="py-4 vh-87-1">
                 @yield('content')
             </main>
-        @elseif ( \Request::is('login') || \Request::is('register') )
+        @elseif ( \Request::is('login', 'register') )
             <main id="background-wrapper">
                 @yield('content')
             </main>
