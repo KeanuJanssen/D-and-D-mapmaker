@@ -26,10 +26,10 @@
                         </div>
                         <div class="form-group">
                             <label for="exampleFormControlSelect1">Formaat roostervakjes</label>
-                            <select class="form-control" id="exampleFormControlSelect1">
-                                <option>2,5cm</option>
-                                <option>2cm</option>
-                                <option>3cm</option>
+                            <select class="form-control" id="exampleFormControlSelect1" name="grid-size">
+                                <option value="2,5">2,5cm</option>
+                                <option value="2">2cm</option>
+                                <option value="3">3cm</option>
                             </select>
                         </div>
                         <div class="form-group row mb-0">
