@@ -44,15 +44,15 @@
            <form action="">
                 <div class="form-group d-flex justify-content-between col-5">
                     <label for="old-password">Oud wachtwoord:</label>
-                    <input id="old-password" class="gegevens-input" type="text" placeholder="Voer hier je oude wachtwoord in">
+                    <input id="old-password" class="gegevens-input" type="password" placeholder="Voer hier je oude wachtwoord in">
                 </div>
                 <div class="form-group d-flex justify-content-between col-5">
                     <label for="new-password">Nieuw wachtwoord:</label>
-                    <input id="new-password" class="gegevens-input" type="text" placeholder="Voer hier je nieuwe wachtwoord in">
+                    <input id="new-password" class="gegevens-input" type="password" placeholder="Voer hier je nieuwe wachtwoord in">
                 </div>
                 <div class="form-group d-flex justify-content-between col-5">
                     <label for="repeat-new-password">Herhaal nieuw wachtwoord:</label>
-                    <input id="repeat-new-password" class="gegevens-input" type="text" placeholder="Voer hier nogmaals je nieuwe wachtwoord in">
+                    <input id="repeat-new-password" class="gegevens-input" type="password" placeholder="Voer hier nogmaals je nieuwe wachtwoord in">
                 </div>
                 <input class="btn btn-primary" type="submit" value="Wachtwoord wijzigen">
            </form>

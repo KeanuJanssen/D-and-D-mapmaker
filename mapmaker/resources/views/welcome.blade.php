@@ -16,7 +16,7 @@
             </div>
             <div class="d-flex justify-content-center align-items-center flex-column login-button-container">
                 <a href="{{ url('/login') }}" class="btn btn-primary d-block w-100 login-button">Aanmelden</a>
-                <a href="" class="btn btn-light d- w-100 login-button">Account aanmaken</a>
+                <a href="{{ url('/register') }}" class="btn btn-light d- w-100 login-button">Account aanmaken</a>
             </div>
         </div>
     </div>
