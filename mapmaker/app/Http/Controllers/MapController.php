@@ -80,8 +80,8 @@ class MapController extends Controller
      */
     public function edit($id)
     {
-        return view('maps.edit');
-        $maps = Maps::where('user_id', auth()->user()->id)->get();
+        $map = Map::where('map_id', $id)->first();
+        return view('maps.edit', compact('map'));
     }
 
     /**
@@ -104,6 +104,7 @@ class MapController extends Controller
      */
     public function destroy($id)
     {
-        //
+        Map::where('map_id', $id)->delete();
+        return redirect()->action('MapController@index');
     }
 }

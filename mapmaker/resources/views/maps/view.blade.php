@@ -23,7 +23,7 @@
                         <div class="map-caption d-flex justify-content-between align-items-center">
                             <p class="map-title">{{ $map->map_name }}</p>
                             <div class="button-section">
-                                <a class="btn btn-info" href="maps/{{ $map->map_id }}/edit"><i class="fas fa-pencil-alt"></i></a>
+                                <a class="btn btn-info" href="{{ $map->map_id }}/edit"><i class="fas fa-pencil-alt"></i></a>
                                 <a class="btn btn-danger" href="#"><i class="far fa-times-circle"></i></a>
                             </div>
                         </div>

@@ -203,7 +203,7 @@
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <form action="{{ action('MapController@destroy', 1) }}" method="POST">
+        <form action="{{ action('MapController@destroy', $map->map_id) }}" method="POST">
             @csrf
             {{ method_field('DELETE') }}
             <button type="submit" class="btn btn-danger">Verwijderen</button>
