@@ -53,7 +53,7 @@
            </div>
        </div>
        <div class="col-10">
-           <div class="row" style="height: 75vh!important;">
+           <div class="row" style="height: 75vh!important;overflow-y:scroll;">
                 <div id="the-map" class="row" style="width: 51.5vw; height: 36vw;">
                     <div class="sprite-slot-bar col-12 row no-gutters">
                         <div sprite="0" id="slot-1" class="col sprite-slot"></div>
