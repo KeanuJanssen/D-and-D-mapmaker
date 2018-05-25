@@ -177,15 +177,39 @@
                             <button id="gum-button" class="btn btn-danger bottom-menu-buttons">Gum</button>
                         </div>
                         <div class="col-6">
-                            <button id="delete-button" class="btn btn-danger bottom-menu-buttons">Verwijderen</button>
+                            <button id="delete-button" class="btn btn-danger bottom-menu-buttons" data-toggle="modal" data-target="#deleteModal">Verwijderen</button>
                         </div>
                     </div>
                </div>
                <div class="col-3 d-flex justify-content-center align-items-center">
-                <button id="opslaan-button" class="btn btn-success bottom-menu-buttons">Opslaan</button>
+                    <button id="opslaan-button" class="btn btn-success bottom-menu-buttons">Opslaan</button>
                </div>
            </div>
        </div>
    </div>
+</div>
+
+<div class="modal fade" id="deleteModal" tabindex="-1" role="dialog" aria-labelledby="deleteModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="deleteModalLabel">Map verwijderen</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>Weet je zeker dat je de map wilt verwijderen?</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <form action="{{ action('MapController@destroy', 1) }}" method="POST">
+            @csrf
+            {{ method_field('DELETE') }}
+            <button type="submit" class="btn btn-danger">Verwijderen</button>
+        </form>
+      </div>
+    </div>
+  </div>
 </div>
 @endsection
