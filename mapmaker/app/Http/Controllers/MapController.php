@@ -50,8 +50,8 @@ class MapController extends Controller
     public function store(Request $request)
     {
          $this->validate($request, [
-            'map_name'      => $request->mapname, 
-            'grid_size'     => $request->gridsize, 
+            'mapname'      => 'required', 
+            'gridsize'     => 'required', 
         ]);
         $Map                = new Map();
         $Map->user_id       = auth()->user()->id;
@@ -93,7 +93,14 @@ class MapController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $this->validate($request, [
+            'gridArrayString'      => 'required',
+        ]);
+        // dd($id);
+        $Map                = Map::find($id);
+        $Map->grid_array    = $request->gridArrayString;
+        $Map->update();
+        return redirect()->action('MapController@index');
     }
 
     /**

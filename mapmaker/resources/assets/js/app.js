@@ -178,7 +178,9 @@ $( document ).ready(function() {
             gridArray.push(usedSprite);
             i++;
         }
-        console.log(gridArray.join);
+        var gridArrayString = gridArray.toString();
+        $('#gridArrayString').attr('value', gridArrayString);
+        console.log(gridArrayString);
     });
 
 });

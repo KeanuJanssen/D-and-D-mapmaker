@@ -182,7 +182,12 @@
                     </div>
                </div>
                <div class="col-3 d-flex justify-content-center align-items-center">
-                    <button id="opslaan-button" class="btn btn-success bottom-menu-buttons">Opslaan</button>
+               <form action="{{ action('MapController@update', $map->map_id) }}" method="POST">
+                    @csrf
+                    <input type="hidden" name="_method" value="PUT">
+                    <input id="gridArrayString" name="gridArrayString" type="hidden" value="">
+                    <button id="opslaan-button" class="btn btn-success bottom-menu-buttons" type="submit">Opslaan</button>
+                </form>
                </div>
            </div>
        </div>
