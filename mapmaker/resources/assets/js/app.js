@@ -85,5 +85,60 @@ $( document ).ready(function() {
         selectedSprite = '';
     });
 
+    //Click on main sprites
+    $('#sprite-catagory-doors').click(function ( ) {
+        $('#door-sprites').css('display', 'flex');
+        $('#wall-sprites').css('display', 'none');
+        $('#stair-sprites').css('display', 'none');
+        $('#floor-sprites').css('display', 'none');
+        $('#chest-sprites').css('display', 'none');
+        $('#water-sprites').css('display', 'none');
+    });
+
+    $('#sprite-catagory-walls').click(function ( ) {
+        $('#door-sprites').css('display', 'none');
+        $('#wall-sprites').css('display', 'flex');
+        $('#stair-sprites').css('display', 'none');
+        $('#floor-sprites').css('display', 'none');
+        $('#chest-sprites').css('display', 'none');
+        $('#water-sprites').css('display', 'none');
+    });
+
+    $('#sprite-catagory-stairs').click(function ( ) {
+        $('#door-sprites').css('display', 'none');
+        $('#wall-sprites').css('display', 'none');
+        $('#stair-sprites').css('display', 'flex');
+        $('#floor-sprites').css('display', 'none');
+        $('#chest-sprites').css('display', 'none');
+        $('#water-sprites').css('display', 'none');
+    });
+
+    $('#sprite-catagory-floors').click(function ( ) {
+        $('#door-sprites').css('display', 'none');
+        $('#wall-sprites').css('display', 'none');
+        $('#stair-sprites').css('display', 'none');
+        $('#floor-sprites').css('display', 'flex');
+        $('#chest-sprites').css('display', 'none');
+        $('#water-sprites').css('display', 'none');
+    });
+
+    $('#sprite-catagory-chests').click(function ( ) {
+        $('#door-sprites').css('display', 'none');
+        $('#wall-sprites').css('display', 'none');
+        $('#stair-sprites').css('display', 'none');
+        $('#floor-sprites').css('display', 'none');
+        $('#chest-sprites').css('display', 'flex');
+        $('#water-sprites').css('display', 'none');
+    });
+
+    $('#sprite-catagory-water').click(function ( ) {
+        $('#door-sprites').css('display', 'none');
+        $('#wall-sprites').css('display', 'none');
+        $('#stair-sprites').css('display', 'none');
+        $('#floor-sprites').css('display', 'none');
+        $('#chest-sprites').css('display', 'none');
+        $('#water-sprites').css('display', 'flex');
+    });
+
 });
 
