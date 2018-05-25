@@ -6,9 +6,8 @@
         <div class="col-md-8">
             <div class="card">
                 <div class="card-header">{{ __('Nieuw Map') }}</div>
-
                 <div class="card-body">
-                    <form method="POST" action="{{ route('create-map') }}">
+                    <form action="{{ action('MapController@store') }}" method="POST" >
                         @csrf
 
                         <div class="form-group row">
