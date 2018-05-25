@@ -23,6 +23,8 @@
                         <div class="map-caption d-flex justify-content-between align-items-center">
                             <p class="map-title">{{ $map->map_name }}</p>
                             <div class="button-section">
+                                <a class="btn btn-info" href="#"><i class="fas fa-pencil-alt"></i></a>
+                                <a class="btn btn-danger" href="" data-toggle="modal" data-target="#deleteModal"><i class="far fa-times-circle"></i></a>
                                 <a class="btn btn-info" href="{{ $map->map_id }}/edit"><i class="fas fa-pencil-alt"></i></a>
                                 <a class="btn btn-danger" href="#"><i class="far fa-times-circle"></i></a>
                             </div>
@@ -34,5 +36,29 @@
             </div>
         </div>
     </div>
+
+    <div class="modal fade" id="deleteModal" tabindex="-1" role="dialog" aria-labelledby="deleteModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="deleteModalLabel">Map verwijderen</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>Weet je zeker dat je de map wilt verwijderen?</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <form action="{{ action('MapController@destroy', 1) }}" method="POST">
+                    @csrf
+                    {{ method_field('DELETE') }}
+                    <button type="submit" class="btn btn-danger">Verwijderen</button>
+                </form>
+            </div>
+            </div>
+        </div>
+        </div>
 
 @endsection
