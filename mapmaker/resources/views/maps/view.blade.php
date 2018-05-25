@@ -18,7 +18,7 @@
                 <div class="col-md-2 map-wrapper">
                     <div class="map-container">
                         <div class="image-container">
-                            <img src="{{ asset('img/placeholder-map-image.jpg') }}" alt="">
+                            <img src="{{ asset('img/thumbnail.jpg') }}" alt="">
                         </div>
                         <div class="map-caption d-flex justify-content-between align-items-center">
                             <p class="map-title">{{ $map->map_name }}</p>

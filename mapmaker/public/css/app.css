@@ -10405,7 +10405,7 @@ p {
 }
 
 #background-wrapper {
-  background: url("/../img/beter.jpg") no-repeat;
+  background: url("/../img/background.JPG") no-repeat center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -10424,12 +10424,12 @@ p {
 }
 
 .home-page .backgrounded {
-  background: url("/../img/beter.jpg") no-repeat;
-  background-size: cover;
+  background: url("/../img/background.JPG") no-repeat center;
+  background-size: 100% 100%;
 }
 
 .home-page .intro-text {
-  background: #fff;
+  background: #ffdead;
   border-radius: 5px;
   border: #bbb solid 1px;
   width: 60%;
@@ -10442,7 +10442,7 @@ p {
 }
 
 .home-page .login-options {
-  background: #bbb;
+  background: #fff;
 }
 
 .home-page .login-button-container {
@@ -10486,6 +10486,7 @@ p {
 }
 
 .map-caption {
+  background-color: #ffdead;
   padding: 10px 10px;
 }
 
