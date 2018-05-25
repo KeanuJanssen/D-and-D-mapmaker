@@ -3,7 +3,7 @@
 @section('content')
 <div class="container-fluid">
    <div class="row">
-       <div class="col vh-87-1" style="background: lightgrey;">
+       <div class="col vh-87-1" style="background: #ffdead;">
            <div class="row py-4">
                 <div class="col-12">
                     <h3>{{ auth()->user()->username }}</h3>
