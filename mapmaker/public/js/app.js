@@ -13937,25 +13937,29 @@ $(document).ready(function () {
     $('.sprite-slot').droppable({
         drop: function drop(event, ui) {
             var backgroundImage = ui.draggable.attr('src');
-            console.log(backgroundImage);
+            var spriteId = ui.draggable.attr("id").match(/\d+/)[0];
             $(this).css("background-image", 'url(' + backgroundImage + ')');
+            $(this).attr('sprite', spriteId);
         }
     });
 
     // Click and drop elements
     selectedSprite = '';
+    selectedSpriteId = '0';
 
     $('.sub-sprite').click(function (data) {
         selectedSprite = this.getAttribute("src");
-        console.log(selectedSprite);
+        selectedSpriteId = this.getAttribute("id").match(/\d+/)[0];
     });
 
     $('.sprite-slot').mousedown(function (data) {
         $(this).css('background-image', 'url(' + selectedSprite + ')');
+        $(this).attr('sprite', selectedSpriteId);
     });
 
     $('#gum-button').click(function (data) {
         selectedSprite = '';
+        selectedSpriteId = '0';
     });
 
     //Click on main sprites
@@ -14020,6 +14024,29 @@ $(document).ready(function () {
         pdf.addHTML($("#the-map"), 15, 15, options, function () {
             pdf.save('MyMap.pdf');
         });
+    });
+
+    // Create array from sprites
+    $('#opslaan-button').click(function () {
+
+        var gridArray = [];
+
+        if ($('#slot-140').length) {
+            var mapSize = 140;
+        } else if ($('#slot-88').length) {
+            var mapSize = 88;
+        } else {
+            var mapSize = 63;
+        }
+
+        var gridArray = [];
+        var i = 1;
+        while (i <= mapSize) {
+            var usedSprite = $('#slot-' + i).attr('sprite');
+            gridArray.push(usedSprite);
+            i++;
+        }
+        console.log(gridArray.join);
     });
 });
 

@@ -15,149 +15,152 @@
                 </div>
                 <div class="sub-sprites col-12 no-gutters">
                     <div id="door-sprites" class="row no-gutters display-none">
-                        <div class="col-2 border"><img id="sub-sprite-1-1" class="w-100 sub-sprite" src="{{ asset('img/sprites/doors/door_horizontal.png') }}" alt=""></div>
-                        <div class="col-2 border"><img id="sub-sprite-1-2" class="w-100 sub-sprite" src="{{ asset('img/sprites/doors/door_vertical.png') }}" alt=""></div>
+                        <div class="col-2 border"><img id="sub-sprite-22" class="w-100 sub-sprite" src="{{ asset('img/sprites/doors/door_horizontal.png') }}" alt=""></div>
+                        <div class="col-2 border"><img id="sub-sprite-23" class="w-100 sub-sprite" src="{{ asset('img/sprites/doors/door_vertical.png') }}" alt=""></div>
                     </div>
                     <div id="wall-sprites" class="row no-gutters display-none">
-                        <div class="col-2 border"><img id="sub-sprite-1-1" class="w-100 sub-sprite" src="{{ asset('img/sprites/walls/wall_corner_bottomleft.png') }}" alt=""></div>
-                        <div class="col-2 border"><img id="sub-sprite-1-2" class="w-100 sub-sprite" src="{{ asset('img/sprites/walls/wall_corner_bottomright.png') }}" alt=""></div>
-                        <div class="col-2 border"><img id="sub-sprite-1-3" class="w-100 sub-sprite" src="{{ asset('img/sprites/walls/wall_corner_topleft.png') }}" alt=""></div>
-                        <div class="col-2 border"><img id="sub-sprite-1-3" class="w-100 sub-sprite" src="{{ asset('img/sprites/walls/wall_corner_topright.png') }}" alt=""></div>
-                        <div class="col-2 border"><img id="sub-sprite-1-3" class="w-100 sub-sprite" src="{{ asset('img/sprites/walls/wall_cross.png') }}" alt=""></div>
-                        <div class="col-2 border"><img id="sub-sprite-1-3" class="w-100 sub-sprite" src="{{ asset('img/sprites/walls/wall_stub_bottom.png') }}" alt=""></div>
-                        <div class="col-2 border"><img id="sub-sprite-1-3" class="w-100 sub-sprite" src="{{ asset('img/sprites/walls/wall_stub_left.png') }}" alt=""></div>
-                        <div class="col-2 border"><img id="sub-sprite-1-3" class="w-100 sub-sprite" src="{{ asset('img/sprites/walls/wall_stub_right.png') }}" alt=""></div>
-                        <div class="col-2 border"><img id="sub-sprite-1-3" class="w-100 sub-sprite" src="{{ asset('img/sprites/walls/wall_stub_top.png') }}" alt=""></div>
-                        <div class="col-2 border"><img id="sub-sprite-1-3" class="w-100 sub-sprite" src="{{ asset('img/sprites/walls/wall_t_bottom.png') }}" alt=""></div>
-                        <div class="col-2 border"><img id="sub-sprite-1-3" class="w-100 sub-sprite" src="{{ asset('img/sprites/walls/wall_t_left.png') }}" alt=""></div>
-                        <div class="col-2 border"><img id="sub-sprite-1-3" class="w-100 sub-sprite" src="{{ asset('img/sprites/walls/wall_t_right.png') }}" alt=""></div>
-                        <div class="col-2 border"><img id="sub-sprite-1-3" class="w-100 sub-sprite" src="{{ asset('img/sprites/walls/wall_t_top.png') }}" alt=""></div>
+                        <div class="col-2 border"><img id="sub-sprite-7" class="w-100 sub-sprite" src="{{ asset('img/sprites/walls/wall_corner_bottomleft.png') }}" alt=""></div>
+                        <div class="col-2 border"><img id="sub-sprite-8" class="w-100 sub-sprite" src="{{ asset('img/sprites/walls/wall_corner_bottomright.png') }}" alt=""></div>
+                        <div class="col-2 border"><img id="sub-sprite-9" class="w-100 sub-sprite" src="{{ asset('img/sprites/walls/wall_corner_topleft.png') }}" alt=""></div>
+                        <div class="col-2 border"><img id="sub-sprite-10" class="w-100 sub-sprite" src="{{ asset('img/sprites/walls/wall_corner_topright.png') }}" alt=""></div>
+                        <div class="col-2 border"><img id="sub-sprite-11" class="w-100 sub-sprite" src="{{ asset('img/sprites/walls/wall_cross.png') }}" alt=""></div>
+                        <div class="col-2 border"><img id="sub-sprite-12" class="w-100 sub-sprite" src="{{ asset('img/sprites/walls/wall_line_horizontal.png') }}" alt=""></div>
+                        <div class="col-2 border"><img id="sub-sprite-13" class="w-100 sub-sprite" src="{{ asset('img/sprites/walls/wall_line_vertical.png') }}" alt=""></div>
+                        <div class="col-2 border"><img id="sub-sprite-14" class="w-100 sub-sprite" src="{{ asset('img/sprites/walls/wall_stub_bottom.png') }}" alt=""></div>
+                        <div class="col-2 border"><img id="sub-sprite-15" class="w-100 sub-sprite" src="{{ asset('img/sprites/walls/wall_stub_left.png') }}" alt=""></div>
+                        <div class="col-2 border"><img id="sub-sprite-16" class="w-100 sub-sprite" src="{{ asset('img/sprites/walls/wall_stub_right.png') }}" alt=""></div>
+                        <div class="col-2 border"><img id="sub-sprite-17" class="w-100 sub-sprite" src="{{ asset('img/sprites/walls/wall_stub_top.png') }}" alt=""></div>
+                        <div class="col-2 border"><img id="sub-sprite-18" class="w-100 sub-sprite" src="{{ asset('img/sprites/walls/wall_t_bottom.png') }}" alt=""></div>
+                        <div class="col-2 border"><img id="sub-sprite-19" class="w-100 sub-sprite" src="{{ asset('img/sprites/walls/wall_t_left.png') }}" alt=""></div>
+                        <div class="col-2 border"><img id="sub-sprite-20" class="w-100 sub-sprite" src="{{ asset('img/sprites/walls/wall_t_right.png') }}" alt=""></div>
+                        <div class="col-2 border"><img id="sub-sprite-21" class="w-100 sub-sprite" src="{{ asset('img/sprites/walls/wall_t_top.png') }}" alt=""></div>
                     </div>
                     <div id="stair-sprites" class="row no-gutters display-none">
-                        <div class="col-2 border"><img id="sub-sprite-1-1" class="w-100 sub-sprite" src="{{ asset('img/sprites/stairs/stairs_horizontal.png') }}" alt=""></div>
-                        <div class="col-2 border"><img id="sub-sprite-1-2" class="w-100 sub-sprite" src="{{ asset('img/sprites/stairs/stairs_vertical.png') }}" alt=""></div>
+                        <div class="col-2 border"><img id="sub-sprite-5" class="w-100 sub-sprite" src="{{ asset('img/sprites/stairs/stairs_horizontal.png') }}" alt=""></div>
+                        <div class="col-2 border"><img id="sub-sprite-6" class="w-100 sub-sprite" src="{{ asset('img/sprites/stairs/stairs_vertical.png') }}" alt=""></div>
                     </div>
                     <div id="floor-sprites" class="row no-gutters display-none">
-                        <div class="col-2 border"><img id="sub-sprite-1-1" class="w-100 sub-sprite" src="{{ asset('img/sprites/floors/floor_pathway.png') }}" alt=""></div>
-                        <div class="col-2 border"><img id="sub-sprite-1-2" class="w-100 sub-sprite" src="{{ asset('img/sprites/floors/floor_stone.png') }}" alt=""></div>
+                        <div class="col-2 border"><img id="sub-sprite-3" class="w-100 sub-sprite" src="{{ asset('img/sprites/floors/floor_pathway.png') }}" alt=""></div>
+                        <div class="col-2 border"><img id="sub-sprite-4" class="w-100 sub-sprite" src="{{ asset('img/sprites/floors/floor_stone.png') }}" alt=""></div>
                     </div>
                     <div id="chest-sprites" class="row no-gutters display-none">
-                        <div class="col-2 border"><img id="sub-sprite-1-2" class="w-100 sub-sprite" src="{{ asset('img/sprites/chest.png') }}" alt=""></div>
+                        <div class="col-2 border"><img id="sub-sprite-1" class="w-100 sub-sprite" src="{{ asset('img/sprites/chest.png') }}" alt=""></div>
                     </div>
                     <div id="water-sprites" class="row no-gutters display-none">
-                        <div class="col-2 border"><img id="sub-sprite-1-2" class="w-100 sub-sprite" src="{{ asset('img/sprites/water.png') }}" alt=""></div>
+                        <div class="col-2 border"><img id="sub-sprite-2" class="w-100 sub-sprite" src="{{ asset('img/sprites/water.png') }}" alt=""></div>
                     </div>
                 </div>
            </div>
        </div>
        <div class="col-10">
-           <!-- <div class="row" style="height: 75vh!important;"> -->
-           <div id="the-map" class="row" style="width: 51.5vw; height: 36vw;">
-           <div class="sprite-slot-bar col-12 row no-gutters">
-                    <div id="sprite-slot-1" class="col sprite-slot"></div>
-                    <div id="sprite-slot-2" class="col sprite-slot"></div>
-                    <div id="sprite-slot-3" class="col sprite-slot"></div>
-                    <div id="sprite-slot-4" class="col sprite-slot"></div>
-                    <div id="sprite-slot-5" class="col sprite-slot"></div>
-                    <div id="sprite-slot-6" class="col sprite-slot"></div>
-                    <div id="sprite-slot-7" class="col sprite-slot"></div>
-                    <div id="sprite-slot-8" class="col sprite-slot"></div>
-                    <div id="sprite-slot-9" class="col sprite-slot"></div>
-                    <div id="sprite-slot-10" class="col sprite-slot"></div>
-                    <div id="sprite-slot-11" class="col sprite-slot"></div>
+           <div class="row" style="height: 75vh!important;">
+                <div id="the-map" class="row" style="width: 51.5vw; height: 36vw;">
+                    <div class="sprite-slot-bar col-12 row no-gutters">
+                        <div sprite="0" id="slot-1" class="col sprite-slot"></div>
+                        <div sprite="0" id="slot-2" class="col sprite-slot"></div>
+                        <div sprite="0" id="slot-3" class="col sprite-slot"></div>
+                        <div sprite="0" id="slot-4" class="col sprite-slot"></div>
+                        <div sprite="0" id="slot-5" class="col sprite-slot"></div>
+                        <div sprite="0" id="slot-6" class="col sprite-slot"></div>
+                        <div sprite="0" id="slot-7" class="col sprite-slot"></div>
+                        <div sprite="0" id="slot-8" class="col sprite-slot"></div>
+                        <div sprite="0" id="slot-9" class="col sprite-slot"></div>
+                        <div sprite="0" id="slot-10" class="col sprite-slot"></div>
+                        <div sprite="0" id="slot-11" class="col sprite-slot"></div>
+                    </div>
+                    <div class="sprite-slot-bar col-12 row no-gutters">
+                        <div sprite="0" id="slot-12" class="col sprite-slot"></div>
+                        <div sprite="0" id="slot-13" class="col sprite-slot"></div>
+                        <div sprite="0" id="slot-14" class="col sprite-slot"></div>
+                        <div sprite="0" id="slot-15" class="col sprite-slot"></div>
+                        <div sprite="0" id="slot-16" class="col sprite-slot"></div>
+                        <div sprite="0" id="slot-17" class="col sprite-slot"></div>
+                        <div sprite="0" id="slot-18" class="col sprite-slot"></div>
+                        <div sprite="0" id="slot-19" class="col sprite-slot"></div>
+                        <div sprite="0" id="slot-20" class="col sprite-slot"></div>
+                        <div sprite="0" id="slot-21" class="col sprite-slot"></div>
+                        <div sprite="0" id="slot-22" class="col sprite-slot"></div>
+                    </div>
+                    <div class="sprite-slot-bar col-12 row no-gutters">
+                        <div sprite="0" id="slot-23" class="col sprite-slot"></div>
+                        <div sprite="0" id="slot-24" class="col sprite-slot"></div>
+                        <div sprite="0" id="slot-25" class="col sprite-slot"></div>
+                        <div sprite="0" id="slot-26" class="col sprite-slot"></div>
+                        <div sprite="0" id="slot-27" class="col sprite-slot"></div>
+                        <div sprite="0" id="slot-28" class="col sprite-slot"></div>
+                        <div sprite="0" id="slot-29" class="col sprite-slot"></div>
+                        <div sprite="0" id="slot-30" class="col sprite-slot"></div>
+                        <div sprite="0" id="slot-31" class="col sprite-slot"></div>
+                        <div sprite="0" id="slot-32" class="col sprite-slot"></div>
+                        <div sprite="0" id="slot-33" class="col sprite-slot"></div>
+                    </div>
+                    <div class="sprite-slot-bar col-12 row no-gutters">
+                        <div sprite="0" id="slot-34" class="col sprite-slot"></div>
+                        <div sprite="0" id="slot-35" class="col sprite-slot"></div>
+                        <div sprite="0" id="slot-36" class="col sprite-slot"></div>
+                        <div sprite="0" id="slot-37" class="col sprite-slot"></div>
+                        <div sprite="0" id="slot-38" class="col sprite-slot"></div>
+                        <div sprite="0" id="slot-39" class="col sprite-slot"></div>
+                        <div sprite="0" id="slot-40" class="col sprite-slot"></div>
+                        <div sprite="0" id="slot-41" class="col sprite-slot"></div>
+                        <div sprite="0" id="slot-42" class="col sprite-slot"></div>
+                        <div sprite="0" id="slot-43" class="col sprite-slot"></div>
+                        <div sprite="0" id="slot-44" class="col sprite-slot"></div>
+                    </div>
+                    <div class="sprite-slot-bar col-12 row no-gutters">
+                        <div sprite="0" id="slot-45" class="col sprite-slot"></div>
+                        <div sprite="0" id="slot-46" class="col sprite-slot"></div>
+                        <div sprite="0" id="slot-47" class="col sprite-slot"></div>
+                        <div sprite="0" id="slot-48" class="col sprite-slot"></div>
+                        <div sprite="0" id="slot-49" class="col sprite-slot"></div>
+                        <div sprite="0" id="slot-50" class="col sprite-slot"></div>
+                        <div sprite="0" id="slot-51" class="col sprite-slot"></div>
+                        <div sprite="0" id="slot-52" class="col sprite-slot"></div>
+                        <div sprite="0" id="slot-53" class="col sprite-slot"></div>
+                        <div sprite="0" id="slot-54" class="col sprite-slot"></div>
+                        <div sprite="0" id="slot-55" class="col sprite-slot"></div>
+                    </div>
+                    <div class="sprite-slot-bar col-12 row no-gutters">
+                        <div sprite="0" id="slot-56" class="col sprite-slot"></div>
+                        <div sprite="0" id="slot-57" class="col sprite-slot"></div>
+                        <div sprite="0" id="slot-58" class="col sprite-slot"></div>
+                        <div sprite="0" id="slot-59" class="col sprite-slot"></div>
+                        <div sprite="0" id="slot-60" class="col sprite-slot"></div>
+                        <div sprite="0" id="slot-61" class="col sprite-slot"></div>
+                        <div sprite="0" id="slot-62" class="col sprite-slot"></div>
+                        <div sprite="0" id="slot-63" class="col sprite-slot"></div>
+                        <div sprite="0" id="slot-64" class="col sprite-slot"></div>
+                        <div sprite="0" id="slot-65" class="col sprite-slot"></div>
+                        <div sprite="0" id="slot-66" class="col sprite-slot"></div>
+                    </div>
+                    <div class="sprite-slot-bar col-12 row no-gutters">
+                        <div sprite="0" id="slot-67" class="col sprite-slot"></div>
+                        <div sprite="0" id="slot-68" class="col sprite-slot"></div>
+                        <div sprite="0" id="slot-69" class="col sprite-slot"></div>
+                        <div sprite="0" id="slot-70" class="col sprite-slot"></div>
+                        <div sprite="0" id="slot-71" class="col sprite-slot"></div>
+                        <div sprite="0" id="slot-72" class="col sprite-slot"></div>
+                        <div sprite="0" id="slot-73" class="col sprite-slot"></div>
+                        <div sprite="0" id="slot-74" class="col sprite-slot"></div>
+                        <div sprite="0" id="slot-75" class="col sprite-slot"></div>
+                        <div sprite="0" id="slot-76" class="col sprite-slot"></div>
+                        <div sprite="0" id="slot-77" class="col sprite-slot"></div>
+                    </div>
+                    <div class="sprite-slot-bar col-12 row no-gutters">
+                        <div sprite="0" id="slot-78" class="col sprite-slot"></div>
+                        <div sprite="0" id="slot-79" class="col sprite-slot"></div>
+                        <div sprite="0" id="slot-80" class="col sprite-slot"></div>
+                        <div sprite="0" id="slot-81" class="col sprite-slot"></div>
+                        <div sprite="0" id="slot-82" class="col sprite-slot"></div>
+                        <div sprite="0" id="slot-83" class="col sprite-slot"></div>
+                        <div sprite="0" id="slot-84" class="col sprite-slot"></div>
+                        <div sprite="0" id="slot-85" class="col sprite-slot"></div>
+                        <div sprite="0" id="slot-86" class="col sprite-slot"></div>
+                        <div sprite="0" id="slot-87" class="col sprite-slot"></div>
+                        <div sprite="0" id="slot-88" class="col sprite-slot"></div>
+                    </div>
                 </div>
-                <div class="sprite-slot-bar col-12 row no-gutters">
-                    <div id="sprite-slot-12" class="col sprite-slot"></div>
-                    <div id="sprite-slot-13" class="col sprite-slot"></div>
-                    <div id="sprite-slot-14" class="col sprite-slot"></div>
-                    <div id="sprite-slot-15" class="col sprite-slot"></div>
-                    <div id="sprite-slot-16" class="col sprite-slot"></div>
-                    <div id="sprite-slot-17" class="col sprite-slot"></div>
-                    <div id="sprite-slot-18" class="col sprite-slot"></div>
-                    <div id="sprite-slot-19" class="col sprite-slot"></div>
-                    <div id="sprite-slot-20" class="col sprite-slot"></div>
-                    <div id="sprite-slot-21" class="col sprite-slot"></div>
-                    <div id="sprite-slot-22" class="col sprite-slot"></div>
-                </div>
-                <div class="sprite-slot-bar col-12 row no-gutters">
-                    <div id="sprite-slot-23" class="col sprite-slot"></div>
-                    <div id="sprite-slot-24" class="col sprite-slot"></div>
-                    <div id="sprite-slot-25" class="col sprite-slot"></div>
-                    <div id="sprite-slot-26" class="col sprite-slot"></div>
-                    <div id="sprite-slot-27" class="col sprite-slot"></div>
-                    <div id="sprite-slot-28" class="col sprite-slot"></div>
-                    <div id="sprite-slot-29" class="col sprite-slot"></div>
-                    <div id="sprite-slot-30" class="col sprite-slot"></div>
-                    <div id="sprite-slot-31" class="col sprite-slot"></div>
-                    <div id="sprite-slot-32" class="col sprite-slot"></div>
-                    <div id="sprite-slot-33" class="col sprite-slot"></div>
-                </div>
-                <div class="sprite-slot-bar col-12 row no-gutters">
-                    <div id="sprite-slot-34" class="col sprite-slot"></div>
-                    <div id="sprite-slot-35" class="col sprite-slot"></div>
-                    <div id="sprite-slot-36" class="col sprite-slot"></div>
-                    <div id="sprite-slot-37" class="col sprite-slot"></div>
-                    <div id="sprite-slot-38" class="col sprite-slot"></div>
-                    <div id="sprite-slot-39" class="col sprite-slot"></div>
-                    <div id="sprite-slot-40" class="col sprite-slot"></div>
-                    <div id="sprite-slot-41" class="col sprite-slot"></div>
-                    <div id="sprite-slot-42" class="col sprite-slot"></div>
-                    <div id="sprite-slot-43" class="col sprite-slot"></div>
-                    <div id="sprite-slot-44" class="col sprite-slot"></div>
-                </div>
-                <div class="sprite-slot-bar col-12 row no-gutters">
-                    <div id="sprite-slot-45" class="col sprite-slot"></div>
-                    <div id="sprite-slot-46" class="col sprite-slot"></div>
-                    <div id="sprite-slot-47" class="col sprite-slot"></div>
-                    <div id="sprite-slot-48" class="col sprite-slot"></div>
-                    <div id="sprite-slot-49" class="col sprite-slot"></div>
-                    <div id="sprite-slot-50" class="col sprite-slot"></div>
-                    <div id="sprite-slot-51" class="col sprite-slot"></div>
-                    <div id="sprite-slot-52" class="col sprite-slot"></div>
-                    <div id="sprite-slot-53" class="col sprite-slot"></div>
-                    <div id="sprite-slot-54" class="col sprite-slot"></div>
-                    <div id="sprite-slot-55" class="col sprite-slot"></div>
-                </div>
-                <div class="sprite-slot-bar col-12 row no-gutters">
-                    <div id="sprite-slot-56" class="col sprite-slot"></div>
-                    <div id="sprite-slot-57" class="col sprite-slot"></div>
-                    <div id="sprite-slot-58" class="col sprite-slot"></div>
-                    <div id="sprite-slot-59" class="col sprite-slot"></div>
-                    <div id="sprite-slot-60" class="col sprite-slot"></div>
-                    <div id="sprite-slot-61" class="col sprite-slot"></div>
-                    <div id="sprite-slot-62" class="col sprite-slot"></div>
-                    <div id="sprite-slot-63" class="col sprite-slot"></div>
-                    <div id="sprite-slot-64" class="col sprite-slot"></div>
-                    <div id="sprite-slot-65" class="col sprite-slot"></div>
-                    <div id="sprite-slot-66" class="col sprite-slot"></div>
-                </div>
-                <div class="sprite-slot-bar col-12 row no-gutters">
-                    <div id="sprite-slot-67" class="col sprite-slot"></div>
-                    <div id="sprite-slot-68" class="col sprite-slot"></div>
-                    <div id="sprite-slot-69" class="col sprite-slot"></div>
-                    <div id="sprite-slot-70" class="col sprite-slot"></div>
-                    <div id="sprite-slot-71" class="col sprite-slot"></div>
-                    <div id="sprite-slot-72" class="col sprite-slot"></div>
-                    <div id="sprite-slot-73" class="col sprite-slot"></div>
-                    <div id="sprite-slot-74" class="col sprite-slot"></div>
-                    <div id="sprite-slot-75" class="col sprite-slot"></div>
-                    <div id="sprite-slot-76" class="col sprite-slot"></div>
-                    <div id="sprite-slot-77" class="col sprite-slot"></div>
-                </div>
-                <div class="sprite-slot-bar col-12 row no-gutters">
-                    <div id="sprite-slot-78" class="col sprite-slot"></div>
-                    <div id="sprite-slot-79" class="col sprite-slot"></div>
-                    <div id="sprite-slot-80" class="col sprite-slot"></div>
-                    <div id="sprite-slot-81" class="col sprite-slot"></div>
-                    <div id="sprite-slot-82" class="col sprite-slot"></div>
-                    <div id="sprite-slot-83" class="col sprite-slot"></div>
-                    <div id="sprite-slot-84" class="col sprite-slot"></div>
-                    <div id="sprite-slot-85" class="col sprite-slot"></div>
-                    <div id="sprite-slot-86" class="col sprite-slot"></div>
-                    <div id="sprite-slot-87" class="col sprite-slot"></div>
-                    <div id="sprite-slot-88" class="col sprite-slot"></div>
-                </div>
-           </div>
+            </div>
             <div class="row" style="height: 12vh!important; background: grey;">
                 <div class="col-3 d-flex justify-content-center align-items-center flex-column">
                     <button id="download-button" class="btn btn-primary bottom-menu-buttons">Download</button>
@@ -179,7 +182,7 @@
                     </div>
                </div>
                <div class="col-3 d-flex justify-content-center align-items-center">
-                <button class="btn btn-success bottom-menu-buttons">Opslaan</button>
+                <button id="opslaan-button" class="btn btn-success bottom-menu-buttons">Opslaan</button>
                </div>
            </div>
        </div>
