@@ -3,7 +3,7 @@
 @section('content')
 <div class="container-fluid">
    <div class="row">
-       <div class="col vh-87-1" style="background: lightgrey;">
+       <div class="col vh-87-1" style="background: #ffdead;">
        <div class="row py-4 no-gutters">
                 <div class="main-sprites col-12 row no-gutters border-bottom border-dark" style="cursor:pointer; border-bottom: 5px solid black!important;">
                     <div class="col-2"><img id="sprite-catagory-doors" class="w-100 sprite-catagory" src="{{ asset('img/sprites/doors/door_horizontal.png') }}" alt=""></div>
@@ -203,7 +203,7 @@
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <form action="{{ action('MapController@destroy', 1) }}" method="POST">
+        <form action="{{ action('MapController@destroy', $map->map_id) }}" method="POST">
             @csrf
             {{ method_field('DELETE') }}
             <button type="submit" class="btn btn-danger">Verwijderen</button>

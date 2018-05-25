@@ -11,22 +11,22 @@
                         @csrf
 
                         <div class="form-group row">
-                            <label for="title" class="col-md-4 col-form-label text-md-right">{{ __('Titel') }}</label>
+                            <label for="mapname" class="col-md-4 col-form-label text-md-right">{{ __('Map naam') }}</label>
 
                             <div class="col-md-6">
-                                <input id="title" type="text" class="form-control{{ $errors->has('title') ? ' is-invalid' : '' }}" name="title" required autofocus>
+                                <input id="mapname" type="text" class="form-control{{ $errors->has('mapname') ? ' is-invalid' : '' }}" name="mapname" required autofocus>
 
-                                @if ($errors->has('title'))
+                                @if ($errors->has('mapname'))
                                     <span class="invalid-feedback">
-                                        <strong>{{ $errors->first('title') }}</strong>
+                                        <strong>{{ $errors->first('mapname') }}</strong>
                                     </span>
                                 @endif
                             </div>
                         </div>
                         <div class="form-group row">
-                            <label for="grid-size" class="col-md-4 col-form-label text-md-right">{{ __('Formaat roostervakjes') }}</label>
+                            <label for="gridsize" class="col-md-4 col-form-label text-md-right">{{ __('Formaat roostervakjes') }}</label>
                             <div class="col-md-6">
-                                <select class="form-control" id="grid-size" name="grid-size" required autofocus>
+                                <select class="form-control" id="gridsize" name="gridsize" required autofocus>
                                     <option value="2,5">2,5cm</option>
                                     <option value="2">2cm</option>
                                     <option value="3">3cm</option>
