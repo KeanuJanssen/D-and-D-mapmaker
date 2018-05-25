@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Maps;
+use App\Map;
 
 class MapController extends Controller
 {
@@ -25,7 +25,7 @@ class MapController extends Controller
      */
     public function index()
     {
-        $maps = Maps::where('user_id', auth()->user()->id)->get();
+        $maps = Map::where('user_id', auth()->user()->id)->get();
         $results = count($maps);
         return view('maps.view', compact('maps', 'results'));
     }
@@ -49,7 +49,16 @@ class MapController extends Controller
      */
     public function store(Request $request)
     {
-        echo 'hello store data';
+         $this->validate($request, [
+            'map_name'      => $request->mapname, 
+            'grid_size'     => $request->gridsize, 
+        ]);
+        $Map                = new Map();
+        $Map->user_id       = auth()->user()->id;
+        $Map->map_name      = $request->mapname;
+        $Map->grid_size     = $request->gridsize;
+        $Map->save();
+        return redirect()->action('MapController@index');
     }
 
     /**
