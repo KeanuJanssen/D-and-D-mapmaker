@@ -14012,6 +14012,15 @@ $(document).ready(function () {
         $('#chest-sprites').css('display', 'none');
         $('#water-sprites').css('display', 'flex');
     });
+
+    //PDF test
+    $('#download-button').click(function () {
+        var options = {};
+        var pdf = new jsPDF('landscape', 'pt', 'a4');
+        pdf.addHTML($("#the-map"), 15, 15, options, function () {
+            pdf.save('MyMap.pdf');
+        });
+    });
 });
 
 /***/ }),

@@ -52,7 +52,7 @@
        </div>
        <div class="col-10">
            <!-- <div class="row" style="height: 75vh!important;"> -->
-           <div class="row" style="width: 51.5vw; height: 36vw;">
+           <div id="the-map" class="row" style="width: 51.5vw; height: 36vw;">
            <div class="sprite-slot-bar col-12 row no-gutters">
                     <div id="sprite-slot-1" class="col sprite-slot"></div>
                     <div id="sprite-slot-2" class="col sprite-slot"></div>
@@ -160,7 +160,7 @@
            </div>
             <div class="row" style="height: 12vh!important; background: grey;">
                 <div class="col-3 d-flex justify-content-center align-items-center flex-column">
-                    <button class="btn btn-primary bottom-menu-buttons">Weergaven</button>
+                    <button id="download-button" class="btn btn-primary bottom-menu-buttons">Download</button>
                </div>
                <div class="col-3 d-flex justify-content-center align-items-center flex-column">
                     <div class="badge badge-light bottom-menu-buttons h-35 d-flex justify-content-center align-items-center flex-column">
