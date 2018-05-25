@@ -8,7 +8,7 @@
                 <div class="card-header">{{ __('Nieuw Map') }}</div>
 
                 <div class="card-body">
-                    <form method="POST" action="{{ route('register') }}">
+                    <form method="POST" action="{{ route('create-map') }}">
                         @csrf
 
                         <div class="form-group row">
@@ -24,18 +24,20 @@
                                 @endif
                             </div>
                         </div>
-                        <div class="form-group">
-                            <label for="exampleFormControlSelect1">Formaat roostervakjes</label>
-                            <select class="form-control" id="exampleFormControlSelect1" name="grid-size">
-                                <option value="2,5">2,5cm</option>
-                                <option value="2">2cm</option>
-                                <option value="3">3cm</option>
-                            </select>
+                        <div class="form-group row">
+                            <label for="grid-size" class="col-md-4 col-form-label text-md-right">{{ __('Formaat roostervakjes') }}</label>
+                            <div class="col-md-6">
+                                <select class="form-control" id="grid-size" name="grid-size" required autofocus>
+                                    <option value="2,5">2,5cm</option>
+                                    <option value="2">2cm</option>
+                                    <option value="3">3cm</option>
+                                </select>
+                            </div>
                         </div>
                         <div class="form-group row mb-0">
                             <div class="col-md-6 offset-md-4">
                                 <button type="submit" class="btn btn-primary">
-                                    {{ __('Register') }}
+                                    {{ __('Maken') }}
                                 </button>
                             </div>
                         </div>
