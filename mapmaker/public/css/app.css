@@ -10503,10 +10503,24 @@ p {
 .sprite-slot-bar .sprite-slot {
   border: 1px solid black !important;
   background-size: cover;
+  background-color: white;
 }
 
 .sprite-catagory .sub-sprite {
   border: 1px solid black !important;
+}
+
+.map-grid {
+  padding: 0;
+}
+
+.map-grid .sprite-slot {
+  width: 15%;
+  height: 15%;
+}
+
+.display-none {
+  display: none;
 }
 
 .navbar-laravel {
