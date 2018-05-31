@@ -4,13 +4,11 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Maps extends Model
+class Map extends Model
 {
-    /**
-     * The attributes that are mass assignable.
-     *
-     * @var array
-     */
+    protected  $primaryKey = 'map_id';
+    
+
     protected $fillable = [
         'map_id', 'user_id', 'map_name', 'grid_size', 'paper_size', 'grid_array',
     ];

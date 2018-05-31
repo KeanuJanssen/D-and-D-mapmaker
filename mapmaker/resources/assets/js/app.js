@@ -6,6 +6,8 @@
  */
 
 require('./bootstrap');
+window.$ = window.jQuery = require('jquery');
+window.$ = $.extend(require('jquery-ui-bundle'));
 
 window.Vue = require('vue');
 
@@ -22,10 +24,10 @@ const app = new Vue({
 });
 
 
-// background-manager.js
 
 $( document ).ready(function() {
     
+    // background-manager.js
     var sPath = window.location.pathname;
     var sPage = sPath.substring(sPath.lastIndexOf('/') + 1);
 
@@ -37,6 +39,149 @@ $( document ).ready(function() {
         console.log(sPage);
 
     }
+
+    //drag and drop elements ***OLD***
+    /*console.log('The drag and drop script is active');
+    window.allowDrop = function (de) {
+        de.preventDefault();
+        console.log('allowDrop() Triggerd');
+    }
+    
+    window.drag = function (de) {
+        de.dataTransfer.setData("text", de.target.id);
+        console.log('drag() Triggerd');
+    }
+    
+    window.drop = function (de) {
+        de.preventDefault();
+        var data = de.dataTransfer.getData("text");
+        de.target.appendChild(document.getElementById(data));
+        console.log('drop() Triggerd');
+    }*/
+
+    // Modal functionality
+    $('#deleteModal').on('shown.bs.modal', function () {
+        $('#delete-button').trigger('focus')
+    })
+
+    //drag and drop elements
+    $('.sub-sprite').draggable({ revert: true, revertDuration: 0 });
+    $('.sprite-slot').droppable({
+        drop: function( event, ui ) {
+            let backgroundImage = ui.draggable.attr('src');
+            let spriteId = ui.draggable.attr("id").match(/\d+/)[0];
+          $( this ).css("background-image", 'url('+backgroundImage+')');
+          $( this ).attr('sprite', spriteId)
+        }
+    });
+
+    // Click and drop elements
+    selectedSprite = '';
+    selectedSpriteId = '0';
+
+    $('.sub-sprite').click(function ( data ) {
+        selectedSprite = this.getAttribute("src");
+        selectedSpriteId = this.getAttribute("id").match(/\d+/)[0];
+    });
+
+    $('.sprite-slot').mousedown(function ( data ) {
+        $(this).css('background-image', 'url('+ selectedSprite +')');
+        $(this).attr('sprite', selectedSpriteId);
+    });
+
+    $('#gum-button').click(function ( data ) {
+        selectedSprite = '';
+        selectedSpriteId = '0';
+    });
+
+    //Click on main sprites
+    $('#sprite-catagory-doors').click(function ( ) {
+        $('#door-sprites').css('display', 'flex');
+        $('#wall-sprites').css('display', 'none');
+        $('#stair-sprites').css('display', 'none');
+        $('#floor-sprites').css('display', 'none');
+        $('#chest-sprites').css('display', 'none');
+        $('#water-sprites').css('display', 'none');
+    });
+
+    $('#sprite-catagory-walls').click(function ( ) {
+        $('#door-sprites').css('display', 'none');
+        $('#wall-sprites').css('display', 'flex');
+        $('#stair-sprites').css('display', 'none');
+        $('#floor-sprites').css('display', 'none');
+        $('#chest-sprites').css('display', 'none');
+        $('#water-sprites').css('display', 'none');
+    });
+
+    $('#sprite-catagory-stairs').click(function ( ) {
+        $('#door-sprites').css('display', 'none');
+        $('#wall-sprites').css('display', 'none');
+        $('#stair-sprites').css('display', 'flex');
+        $('#floor-sprites').css('display', 'none');
+        $('#chest-sprites').css('display', 'none');
+        $('#water-sprites').css('display', 'none');
+    });
+
+    $('#sprite-catagory-floors').click(function ( ) {
+        $('#door-sprites').css('display', 'none');
+        $('#wall-sprites').css('display', 'none');
+        $('#stair-sprites').css('display', 'none');
+        $('#floor-sprites').css('display', 'flex');
+        $('#chest-sprites').css('display', 'none');
+        $('#water-sprites').css('display', 'none');
+    });
+
+    $('#sprite-catagory-chests').click(function ( ) {
+        $('#door-sprites').css('display', 'none');
+        $('#wall-sprites').css('display', 'none');
+        $('#stair-sprites').css('display', 'none');
+        $('#floor-sprites').css('display', 'none');
+        $('#chest-sprites').css('display', 'flex');
+        $('#water-sprites').css('display', 'none');
+    });
+
+    $('#sprite-catagory-water').click(function ( ) {
+        $('#door-sprites').css('display', 'none');
+        $('#wall-sprites').css('display', 'none');
+        $('#stair-sprites').css('display', 'none');
+        $('#floor-sprites').css('display', 'none');
+        $('#chest-sprites').css('display', 'none');
+        $('#water-sprites').css('display', 'flex');
+    });
+
+    //PDF test
+    $('#download-button').click(function() {
+        var options = {};
+        var pdf = new jsPDF('landscape', 'pt', 'a4');
+        pdf.addHTML($("#the-map"), 15, 15, options, function() {
+          pdf.save('MyMap.pdf');
+        });
+    });
+
+    // Create array from sprites
+    $('#opslaan-button').click(function() {
+
+        var gridArray = [];
+
+        if ($('#slot-140').length) {    
+            var mapSize = 140;
+        } else if ($('#slot-88').length) {
+            var mapSize = 88;
+        } else {
+            var mapSize = 63;
+        }
+
+        var gridArray = [];
+        var i = 1;
+        while (i <= mapSize) {
+            var usedSprite = $('#slot-'+i).attr('sprite');
+            gridArray.push(usedSprite);
+            i++;
+        }
+        var gridArrayString = gridArray.toString();
+        $('#gridArrayString').attr('value', gridArrayString);
+        console.log(gridArrayString);
+    });
 
 });
 

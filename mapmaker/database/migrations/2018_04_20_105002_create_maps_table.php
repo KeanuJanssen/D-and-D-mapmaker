@@ -18,8 +18,8 @@ class CreateMapsTable extends Migration
             $table->integer('user_id');
             $table->string('map_name');
             $table->string('grid_size');
-            $table->string('paper_size');
-            $table->json('grid_array');
+            $table->string('paper_size')->default('A4');
+            $table->string('grid_array')->default('');
             $table->timestamps();
         });
     }

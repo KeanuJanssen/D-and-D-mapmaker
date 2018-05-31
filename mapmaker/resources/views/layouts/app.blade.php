@@ -11,6 +11,7 @@
     <title>{{ config('app.name', 'Laravel') }}</title>
 
     <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.4/jspdf.min.js"></script>
     <script src="{{ asset('js/app.js') }}" defer></script>
 
     <!-- Fonts -->
@@ -23,9 +24,12 @@
 </head>
 <body>
     <div id="app">
+    @if ( \Request::is('/')  )
+    
+        @else
         <nav class="navbar navbar-expand-md navbar-light navbar-laravel">
             <div class="container-fluid">
-                <a class="navbar-brand" href="{{ url('/maps') }}">
+                <a class="navbar-brand" href="{{ url('maps') }}">
                 <img width="170px" src="{{ asset('/img/lionflex_color.png') }}">
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -74,13 +78,18 @@
                 </div>
             </div>
         </nav>
+        @endif
  
-        @if (\Request::is('users'))  
-            <main id="alt-wrapper">
+        @if ( \Request::is('maps', 'maps/create')  )  
+            <main id="alt-wrapper" class="py-4 vh-87-1">
+                @yield('content')
+            </main>
+        @elseif ( \Request::is('login', 'register') )
+            <main id="background-wrapper">
                 @yield('content')
             </main>
         @else
-            <main id="alt-wrapper" class="py-4 vh-87-1">
+            <main id="alt-wrapper">
                 @yield('content')
             </main>
         @endif

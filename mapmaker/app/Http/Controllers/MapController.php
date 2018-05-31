@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Maps;
+use App\Map;
 
 class MapController extends Controller
 {
@@ -25,7 +25,7 @@ class MapController extends Controller
      */
     public function index()
     {
-        $maps = Maps::where('user_id', auth()->user()->id)->get();
+        $maps = Map::where('user_id', auth()->user()->id)->get();
         $results = count($maps);
         return view('maps.view', compact('maps', 'results'));
     }
@@ -37,6 +37,7 @@ class MapController extends Controller
      */
     public function create()
     {
+        
         return view('maps.create');
     }
 
@@ -48,7 +49,16 @@ class MapController extends Controller
      */
     public function store(Request $request)
     {
-        //
+         $this->validate($request, [
+            'mapname'      => 'required', 
+            'gridsize'     => 'required', 
+        ]);
+        $Map                = new Map();
+        $Map->user_id       = auth()->user()->id;
+        $Map->map_name      = $request->mapname;
+        $Map->grid_size     = $request->gridsize;
+        $Map->save();
+        return redirect()->action('MapController@index');
     }
 
     /**
@@ -70,7 +80,8 @@ class MapController extends Controller
      */
     public function edit($id)
     {
-        //
+        $map = Map::where('map_id', $id)->first();
+        return view('maps.edit', compact('map'));
     }
 
     /**
@@ -82,7 +93,14 @@ class MapController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $this->validate($request, [
+            'gridArrayString'      => 'required',
+        ]);
+        // dd($id);
+        $Map                = Map::find($id);
+        $Map->grid_array    = $request->gridArrayString;
+        $Map->update();
+        return redirect()->action('MapController@index');
     }
 
     /**
@@ -93,6 +111,7 @@ class MapController extends Controller
      */
     public function destroy($id)
     {
-        //
+        Map::where('map_id', $id)->delete();
+        return redirect()->action('MapController@index');
     }
 }

@@ -17,6 +17,7 @@
 
 
 .map-caption {
+    background-color: #ffdead;
     padding: 10px 10px;
     .map-title {
         font-size: 1.2rem;
@@ -30,4 +31,28 @@
         text-align: center;
         text-decoration: none;
     }
+}
+
+.sprite-slot-bar {
+    .sprite-slot {
+        border: 1px solid black!important;
+        background-size: cover;
+        background-color: white;
+    }
+}
+
+.sprite-catagory .sub-sprite {
+    border: 1px solid black!important;
+}
+
+.map-grid {
+    padding: 0;
+    .sprite-slot {
+        width: 15%;
+        height: 15%;
+    }
+}
+
+.display-none {
+    display:none;
 }
