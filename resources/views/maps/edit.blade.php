@@ -3,7 +3,7 @@
 @section('content')
 <div class="container-fluid">
    <div class="row">
-       <div class="col vh-87-1" style="background: lightgrey;">
+       <div class="col vh-87-1" style="background: #ffdead;">
        <div class="row py-4 no-gutters">
                 <div class="main-sprites col-12 row no-gutters border-bottom border-dark" style="cursor:pointer; border-bottom: 5px solid black!important;">
                     <div class="col-2"><img id="sprite-catagory-doors" class="w-100 sprite-catagory" src="{{ asset('img/sprites/doors/door_horizontal.png') }}" alt=""></div>
@@ -53,7 +53,7 @@
            </div>
        </div>
        <div class="col-10">
-           <div class="row" style="height: 75vh!important;">
+           <div class="row" style="height: 75vh!important;overflow-y:scroll;">
                 <div id="the-map" class="row" style="width: 51.5vw; height: 36vw;">
                     <div class="sprite-slot-bar col-12 row no-gutters">
                         <div sprite="0" id="slot-1" class="col sprite-slot"></div>
@@ -177,15 +177,44 @@
                             <button id="gum-button" class="btn btn-danger bottom-menu-buttons">Gum</button>
                         </div>
                         <div class="col-6">
-                            <button id="delete-button" class="btn btn-danger bottom-menu-buttons">Verwijderen</button>
+                            <button id="delete-button" class="btn btn-danger bottom-menu-buttons" data-toggle="modal" data-target="#deleteModal">Verwijderen</button>
                         </div>
                     </div>
                </div>
                <div class="col-3 d-flex justify-content-center align-items-center">
-                <button id="opslaan-button" class="btn btn-success bottom-menu-buttons">Opslaan</button>
+               <form action="{{ action('MapController@update', $map->map_id) }}" method="POST">
+                    @csrf
+                    <input type="hidden" name="_method" value="PUT">
+                    <input id="gridArrayString" name="gridArrayString" type="hidden" value="">
+                    <button id="opslaan-button" class="btn btn-success bottom-menu-buttons" type="submit">Opslaan</button>
+                </form>
                </div>
            </div>
        </div>
    </div>
+</div>
+
+<div class="modal fade" id="deleteModal" tabindex="-1" role="dialog" aria-labelledby="deleteModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="deleteModalLabel">Map verwijderen</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>Weet je zeker dat je de map wilt verwijderen?</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <form action="{{ action('MapController@destroy', $map->map_id) }}" method="POST">
+            @csrf
+            {{ method_field('DELETE') }}
+            <button type="submit" class="btn btn-danger">Verwijderen</button>
+        </form>
+      </div>
+    </div>
+  </div>
 </div>
 @endsection

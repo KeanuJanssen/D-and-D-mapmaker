@@ -59,6 +59,11 @@ $( document ).ready(function() {
         console.log('drop() Triggerd');
     }*/
 
+    // Modal functionality
+    $('#deleteModal').on('shown.bs.modal', function () {
+        $('#delete-button').trigger('focus')
+    })
+
     //drag and drop elements
     $('.sub-sprite').draggable({ revert: true, revertDuration: 0 });
     $('.sprite-slot').droppable({
@@ -173,7 +178,9 @@ $( document ).ready(function() {
             gridArray.push(usedSprite);
             i++;
         }
-        console.log(gridArray.join);
+        var gridArrayString = gridArray.toString();
+        $('#gridArrayString').attr('value', gridArrayString);
+        console.log(gridArrayString);
     });
 
 });
