@@ -50,7 +50,7 @@ class MapController extends Controller
     public function store(Request $request)
     {
          $this->validate($request, [
-            'mapname'      => 'required', 
+            'mapname'      => 'required | max:255', 
             'gridsize'     => 'required', 
         ]);
         $Map                = new Map();
