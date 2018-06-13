@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateSpritesTable extends Migration
+class CreateSpriteCategoryTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,10 +13,10 @@ class CreateSpritesTable extends Migration
      */
     public function up()
     {
-        Schema::create('sprites', function (Blueprint $table) {
-            $table->increments('sprite_id');
-            $table->string('sprite_image');
+        Schema::create('sprite_category', function (Blueprint $table) {
+            $table->increments('id');
             $table->integer('cat_id');
+            $table->string('cat_name');
             $table->timestamps();
         });
     }
@@ -28,6 +28,6 @@ class CreateSpritesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('sprites');
+        Schema::dropIfExists('sprite_category');
     }
 }

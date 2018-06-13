@@ -1,5 +1,20 @@
 @extends('layouts.app')
 
+
+@foreach($sprite-cats as $sprite-cat)
+    <div class="sub-sprites col-12 no-gutters">
+        <div id="{{ $sprite-cat->name }}-sprites" class="row no-gutters display-none">
+        
+            @foreach($sprite-subs as $sprite-sub)
+                @if($sprite-sub->cat_id == $sprite-cat->id)
+                    <div class="col-2 border"><img id="sub-sprite-{{ $sprite-sub->id }}" class="w-100 sub-sprite" src="{{ asset('img/sprites/doors/door_horizontal.png') }}" alt=""></div>
+                @endif
+            @endforeach
+        
+        </div>
+    </div>
+@endforeach
+
 @section('content')
 <div class="container-fluid">
    <div class="row">
