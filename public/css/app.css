@@ -10511,10 +10511,16 @@ p {
 .map-caption {
   background-color: #ffdead;
   padding: 10px 10px;
+  overflow-wrap: break-word !important;
+  word-wrap: break-word !important;
+  -webkit-hyphens: auto;
+      -ms-hyphens: auto;
+          hyphens: auto;
 }
 
 .map-caption .map-title {
   font-size: 1.2rem;
+  width: 60%;
 }
 
 .new-map-button a {
