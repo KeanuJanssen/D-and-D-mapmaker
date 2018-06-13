@@ -3,7 +3,7 @@
 
 @foreach($sprite-cats as $sprite-cat)
     <div class="sub-sprites col-12 no-gutters">
-        <div id="{{ $sprite-cat->name }}-sprites" class="row no-gutters display-none">
+        <div id="sprite-{{ $sprite-cat->id }}" class="row no-gutters display-none">
         
             @foreach($sprite-subs as $sprite-sub)
                 @if($sprite-sub->cat_id == $sprite-cat->id)

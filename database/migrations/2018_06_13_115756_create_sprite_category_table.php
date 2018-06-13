@@ -17,6 +17,7 @@ class CreateSpriteCategoryTable extends Migration
             $table->increments('id');
             $table->integer('cat_id');
             $table->string('cat_name');
+            $table->string('cat_img');
             $table->timestamps();
         });
     }

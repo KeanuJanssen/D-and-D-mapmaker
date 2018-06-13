@@ -12,12 +12,12 @@ class SpriteCategorySeeder extends Seeder
      public function run()
     {
         $cats = array (
-            array(1, 'door'),
-            array(2, 'wall'),
-            array(3, 'stair'),
-            array(4, 'floor'),
-            array(5, 'chest'),
-            array(6, 'water'),
+            array(1, 'door', 'doors/door_horizontal.png'),
+            array(2, 'wall', 'walls/wall_cross.png'),
+            array(3, 'stair', 'stairs/stairs_horizontal.png'),
+            array(4, 'floor', 'floors/floor_pathway.png' ),
+            array(5, 'chest', 'chest.png'),
+            array(6, 'water', 'water.png'),
         );
 
         foreach ($cats as $cat)
@@ -25,6 +25,7 @@ class SpriteCategorySeeder extends Seeder
            DB::table('sprite_category')->insert([
             'cat_id'    => $cat[0],
             'cat_name'  => $cat[1],
+            'cat_img'   => $cat[2],
             ]);
         }
         

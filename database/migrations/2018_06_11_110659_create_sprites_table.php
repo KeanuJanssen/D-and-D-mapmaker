@@ -14,9 +14,10 @@ class CreateSpritesTable extends Migration
     public function up()
     {
         Schema::create('sprites', function (Blueprint $table) {
-            $table->increments('sprite_id');
-            $table->string('sprite_image');
+            $table->increments('id');
+            $table->integer('sprite_id');
             $table->integer('cat_id');
+            $table->string('sprite_img');
             $table->timestamps();
         });
     }
