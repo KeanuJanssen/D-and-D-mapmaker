@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Map;
+use App\Sprite;
+use App\Spritecategory;
 
 class MapController extends Controller
 {
@@ -50,7 +52,7 @@ class MapController extends Controller
     public function store(Request $request)
     {
          $this->validate($request, [
-            'mapname'      => 'required', 
+            'mapname'      => 'required | max:255', 
             'gridsize'     => 'required', 
         ]);
         $Map                = new Map();
@@ -81,7 +83,9 @@ class MapController extends Controller
     public function edit($id)
     {
         $map = Map::where('map_id', $id)->first();
-        return view('maps.edit', compact('map'));
+        $sprite_cats = Spritecategory::get();
+        $sprites = Sprite::get();
+        return view('maps.edit', compact('map', 'sprite_cats', 'sprites'));
     }
 
     /**
