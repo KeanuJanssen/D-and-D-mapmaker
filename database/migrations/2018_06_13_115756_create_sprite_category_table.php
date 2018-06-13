@@ -13,7 +13,7 @@ class CreateSpriteCategoryTable extends Migration
      */
     public function up()
     {
-        Schema::create('sprite_category', function (Blueprint $table) {
+        Schema::create('spritecategories', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('cat_id');
             $table->string('cat_name');
@@ -29,6 +29,6 @@ class CreateSpriteCategoryTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('sprite_category');
+        Schema::dropIfExists('spritecategories');
     }
 }

@@ -22,7 +22,7 @@ class SpriteCategorySeeder extends Seeder
 
         foreach ($cats as $cat)
         { 
-           DB::table('sprite_category')->insert([
+           DB::table('spritecategories')->insert([
             'cat_id'    => $cat[0],
             'cat_name'  => $cat[1],
             'cat_img'   => $cat[2],

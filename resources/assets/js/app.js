@@ -140,7 +140,7 @@ $( document ).ready(function() {
         $('#water-sprites').css('display', 'none');
     });
 
-    $('#sprite-catagory-water').click(function ( ) {
+    $('#sprite-catagory-waters').click(function ( ) {
         $('#door-sprites').css('display', 'none');
         $('#wall-sprites').css('display', 'none');
         $('#stair-sprites').css('display', 'none');
